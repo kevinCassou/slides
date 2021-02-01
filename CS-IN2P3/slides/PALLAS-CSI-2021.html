@@ -682,7 +682,7 @@ name: lasercontrol2
 
 * **add** active beam .dgrey[**pointing stabilization**] &lt;img style="vertical-align:middle" src="img/icon_detail.svg" height="20px"/&gt;  
 * **add** online development of .orange[**laser field spatio-temporal distortion**] monitoring  &lt;img style="vertical-align:middle" src="img/icon_detail.svg" height="20px"/&gt;  
-* full **data-logging** and **gateway** to accelerator control commande &lt;img style="vertical-align:middle" src="img/icon_detail.svg" height="20px"/&gt;  
+* full **data-logging** and **gateway** to accelerator control command &lt;img style="vertical-align:middle" src="img/icon_detail.svg" height="20px"/&gt;  
 
 ---
 name: LPIsimulation
@@ -691,7 +691,7 @@ name: LPIsimulation
 # laser-plasma injector design 
 .pull-left[
 .blue[**Input**] 
-* laser parameters, limited to &lt;br&gt; `\(a_0=1.15\pm0.8\)` and `\(\tau_L = 40\pm3\)` fs (FWHM) 
+* laser parameters in vacuum (a&lt;sub&gt;0&lt;/sub&gt;,t&lt;sub&gt;0&lt;/sub&gt;,w&lt;sub&gt;0&lt;/sub&gt;,x&lt;sub&gt;0&lt;/sub&gt;) 
 * plasma target = continuous laminar flow gas cell &lt;br&gt;
 `\(\Rightarrow\)` longitudinal profile `\(n_e(x)\)`  `\(\propto\)` cell geometry
 
@@ -707,6 +707,11 @@ name: LPIsimulation
 .pull-right[
 
 &lt;img src="img/lpi-optimization.svg" width="180%" /&gt;
+
+]
+
+.footnote[
+[1] in phase 1 : limited to `\(a_0=1.15\pm0.8\)` and `\(\tau_L = 40\pm3\)` fs (FWHM) 
 
 ]
 
@@ -745,18 +750,27 @@ name: plasmatargetry2
 ### develop engineering of laser-plasma accelerating structure 
 
 .pull-left[
-design
+multi-zone cell design
 * add *control-variable* to the plasma profile 
-* multi-zone cell 
+* possibly region / region  
 
-preliminary studies results 
+preliminary PIC studies results 
 * chair-like density profile
-* downramp assisted localized ionization
+* SMILEI( AM + envelop)
+&lt;br&gt;
+
+=&gt; downramp assisted localized ionization
+
+next steps optimization of 
+1. injection `\(Q \Delta E/E\)`
+2. beam emittance 
+
+
 ]
 
 
 .pull-left[
-&lt;img src="img/lpi-prelim.svg" width="100%" /&gt;
+&lt;img src="img/lpi-prelim.svg" width="150%" /&gt;
 ]
 ---
 name: plasmatargetry3
@@ -902,7 +916,7 @@ chicane,dogleg;  plasma mirror
 ]
 
 .pull-right[
-
+&lt;img src="img/lpa-transport.png" width="100%" /&gt;
 
 ]
 
@@ -1047,7 +1061,7 @@ LPA a .orange[**one**] parameter optimization performer
 ---
 name: laserediag
 
-# laser control details
+# laser control &amp; diags details
 
 * control of the laser driver is the key 
 

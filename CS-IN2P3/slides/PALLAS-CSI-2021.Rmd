@@ -736,7 +736,7 @@ knitr::include_graphics("img/lpa-driver-scheme1-V2.svg")
 
 * **add** active beam .dgrey[**pointing stabilization**] <img style="vertical-align:middle" src="img/icon_detail.svg" height="20px"/>  
 * **add** online development of .orange[**laser field spatio-temporal distortion**] monitoring  <img style="vertical-align:middle" src="img/icon_detail.svg" height="20px"/>  
-* full **data-logging** and **gateway** to accelerator control commande <img style="vertical-align:middle" src="img/icon_detail.svg" height="20px"/>  
+* full **data-logging** and **gateway** to accelerator control command <img style="vertical-align:middle" src="img/icon_detail.svg" height="20px"/>  
 
 ---
 name: LPIsimulation
@@ -745,7 +745,7 @@ name: LPIsimulation
 # laser-plasma injector design 
 .pull-left[
 .blue[**Input**] 
-* laser parameters, limited to <br> $a_0=1.15\pm0.8$ and $\tau_L = 40\pm3$ fs (FWHM) 
+* laser parameters in vacuum (a<sub>0</sub>,t<sub>0</sub>,w<sub>0</sub>,x<sub>0</sub>) 
 * plasma target = continuous laminar flow gas cell <br>
 $\Rightarrow$ longitudinal profile $n_e(x)$  $\propto$ cell geometry
 
@@ -763,6 +763,11 @@ $\Rightarrow$ longitudinal profile $n_e(x)$  $\propto$ cell geometry
 ```{r echo=FALSE, out.width="180%",fig.pos="!b"}
 knitr::include_graphics("img/lpi-optimization.svg")
 ```
+
+]
+
+.footnote[
+[1] in phase 1 : limited to $a_0=1.15\pm0.8$ and $\tau_L = 40\pm3$ fs (FWHM) 
 
 ]
 
@@ -801,18 +806,27 @@ name: plasmatargetry2
 ### develop engineering of laser-plasma accelerating structure 
 
 .pull-left[
-design
+multi-zone cell design
 * add *control-variable* to the plasma profile 
-* multi-zone cell 
+* possibly region / region  
 
-preliminary studies results 
+preliminary PIC studies results 
 * chair-like density profile
-* downramp assisted localized ionization
+* SMILEI( AM + envelop)
+<br>
+
+=> downramp assisted localized ionization
+
+next steps optimization of 
+1. injection $Q \Delta E/E$
+2. beam emittance 
+
+
 ]
 
 
 .pull-left[
-```{r echo=FALSE, out.width="100%"}
+```{r echo=FALSE, out.width="150%"}
 knitr::include_graphics("img/lpi-prelim.svg")
 ```
 ]
@@ -972,7 +986,9 @@ chicane,dogleg;  plasma mirror
 ]
 
 .pull-right[
-
+```{r echo=FALSE, out.width="100%"}
+knitr::include_graphics("img/lpa-transport.png")
+```
 
 ]
 
@@ -1127,7 +1143,7 @@ knitr::include_graphics("img/SOA-LPA.png")
 ---
 name: laserediag
 
-# laser control details
+# laser control & diags details
 
 * control of the laser driver is the key 
 
