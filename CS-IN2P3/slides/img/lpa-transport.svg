@@ -60,8 +60,8 @@
      id="layer1"
      transform="translate(0,-196.45834)">
     <image
-       y="233.76091"
-       x="95.304932"
+       y="231.27818"
+       x="93.907135"
        id="image893"
        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABY4AAAN0CAYAAAATS7yoAAAK0GlDQ1BJQ0MgUHJvZmlsZQAASImV
 lwdUE+kWx7+Z9JDQEiIgJdRQBOlVSuihSwcbIQlJKCGkgCJ2FldwRVERwbKiKyIKrgWQtSCi2BbB
@@ -4577,11 +4577,11 @@ ECBAgAABAgQIdJLAP8hPIHHiN2j8AAAAAElFTkSuQmCC
 "
        style="image-rendering:optimizeQuality"
        preserveAspectRatio="none"
-       height="50"
-       width="80.429855" />
+       height="53.351685"
+       width="85.821365" />
     <image
-       y="233.62511"
-       x="1.9212031"
+       y="230.16684"
+       x="0.33370313"
        id="image958"
        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABOEAAANYCAYAAACCR/nYAAAK0GlDQ1BJQ0MgUHJvZmlsZQAASImV
 lwdUE+kWx7+Z9JDQEiIgJdRQBOlVSuihSwcbIQlJKCGkgCJ2FldwRVERwbKiKyIKrgWQtSCi2BbB
@@ -13647,11 +13647,11 @@ IDAhBBDhJgQzjUAAAhCAAAQgAAEIQAACEIAABCAAAQg0M4H/H4QCDpSiair7AAAAAElFTkSuQmCC
 "
        style="image-rendering:optimizeQuality"
        preserveAspectRatio="none"
-       height="60"
-       width="87.54673" />
+       height="63.458267"
+       width="92.592728" />
     <image
-       y="199.73148"
-       x="3.1450481"
+       y="197.93431"
+       x="20.118319"
        id="image1023"
        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABlQAAAEmCAYAAAAUQ338AAAK0GlDQ1BJQ0MgUHJvZmlsZQAASImV
 lwdUE+kWx7+Z9JDQEiIgJdRQBOlVSuihSwcbIQlJKCGkgCJ2FldwRVERwbKiKyIKrgWQtSCi2BbB
@@ -18043,8 +18043,8 @@ RU5ErkJggg==
 "
        style="image-rendering:optimizeQuality"
        preserveAspectRatio="none"
-       height="18.148148"
-       width="100" />
+       height="22.859247"
+       width="125.95912" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -18070,13 +18070,13 @@ RU5ErkJggg==
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="1.9968519"
-       y="221.91826"
+       x="30.352198"
+       y="224.11481"
        id="text1069"><tspan
          sodipodi:role="line"
          id="tspan1067"
-         x="1.9968519"
-         y="221.91826"
+         x="30.352198"
+         y="224.11481"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222223px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';stroke-width:0.26458332">A. Ferran Pousa, et al. Phys. Rev. Lett. 123, 054801 (2019)</tspan></text>
     <image
        y="230.16684"

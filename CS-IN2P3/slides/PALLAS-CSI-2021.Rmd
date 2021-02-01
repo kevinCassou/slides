@@ -689,6 +689,13 @@ ML-COLA: P2IO project (2021-2022), V. Kubytskyi and M. Pittman *Proof of the pri
 
 
 ---
+class: middle,center,inverse
+
+
+# advanced laser control
+
+
+---
 name: lasercontrol1
 
 # laser performances & control
@@ -698,7 +705,7 @@ name: lasercontrol1
 overview of the laser driver system
 
 ```{r echo=FALSE, out.width="100%",fig.pos="!b"}
-knitr::include_graphics("img/lpa-driver-scheme1-V2-current.svg")   
+knitr::include_graphics("img/lpa-driver-scheme1-V2.svg")   
 ```
 
 ---
@@ -731,12 +738,21 @@ name: lasercontrol2
 
 
 ```{r echo=FALSE, out.width="100%",fig.pos="!b"}
-knitr::include_graphics("img/lpa-driver-scheme1-V2.svg")   
+knitr::include_graphics("img/lpa-driver-scheme2-V2.svg")   
 ```
 
 * **add** active beam .dgrey[**pointing stabilization**] <img style="vertical-align:middle" src="img/icon_detail.svg" height="20px"/>  
 * **add** online development of .orange[**laser field spatio-temporal distortion**] monitoring  <img style="vertical-align:middle" src="img/icon_detail.svg" height="20px"/>  
 * full **data-logging** and **gateway** to accelerator control command <img style="vertical-align:middle" src="img/icon_detail.svg" height="20px"/>  
+
+
+
+---
+class: middle,center,inverse
+
+# plasma target 
+
+
 
 ---
 name: LPIsimulation
@@ -892,6 +908,15 @@ view of the plasma test bench under commissioning with long testing cell<sup>3</
 
 ]
 
+
+
+---
+class: middle,center,inverse
+
+
+# electron beam control and transport
+
+
 ---
 name:eCBL1
 
@@ -986,7 +1011,7 @@ chicane,dogleg;  plasma mirror
 ]
 
 .pull-right[
-```{r echo=FALSE, out.width="100%"}
+```{r echo=FALSE, out.width="120%"}
 knitr::include_graphics("img/lpa-transport.png")
 ```
 
@@ -1018,7 +1043,7 @@ name: resources
 
 * Project team is about **~30 persons** [IJClab,LLR, LCP, CEA]
 * average of **7.5 FTE **
-* Project team snapshot for 2021
+* Project team **snapshot for 2021**
 
 ```{r echo=FALSE, out.width="100%"}
 knitr::include_graphics("img/resources-2021.png")
