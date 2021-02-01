@@ -646,24 +646,24 @@ ML-COLA: P2IO project (2021-2022), V. Kubytskyi and M. Pittman *Proof of the pri
 class: middle,center,inverse
 
 
-# advanced laser control
+# Advanced laser control
 
 
 ---
 name: lasercontrol1
 
-# laser performances &amp; control
+#Laser performances &amp; control
 
 .orange[**50-100 TW class laser system = complex system**] 
 
 overview of the laser driver system
 
-&lt;img src="img/lpa-driver-scheme1-V2.svg" width="100%" /&gt;
+&lt;img src="img/lpa-driver-scheme1-V2.png" width="100%" /&gt;
 
 ---
 name: lasercontrol3
 
-# laser performances &amp; control
+# Laser performances &amp; control
 
 current status: 
 .pull-left[
@@ -682,10 +682,10 @@ current status:
 ---
 name: lasercontrol2
 
-# laser performances &amp; control
+# Laser performances &amp; control
 
 
-&lt;img src="img/lpa-driver-scheme2-V2.svg" width="100%" /&gt;
+&lt;img src="img/lpa-driver-scheme2-V2.png" width="100%" /&gt;
 
 * **add** active beam .dgrey[**pointing stabilization**] &lt;img style="vertical-align:middle" src="img/icon_detail.svg" height="20px"/&gt;  
 * **add** online development of .orange[**laser field spatio-temporal distortion**] monitoring  &lt;img style="vertical-align:middle" src="img/icon_detail.svg" height="20px"/&gt;  
@@ -696,7 +696,7 @@ name: lasercontrol2
 ---
 class: middle,center,inverse
 
-# plasma target 
+# Plasma target 
 
 
 
@@ -704,10 +704,10 @@ class: middle,center,inverse
 name: LPIsimulation
 
 
-# laser-plasma injector design 
+# Laser-plasma injector design 
 .pull-left[
 .blue[**Input**] 
-* laser parameters in vacuum (a&lt;sub&gt;0&lt;/sub&gt;,t&lt;sub&gt;0&lt;/sub&gt;,w&lt;sub&gt;0&lt;/sub&gt;,x&lt;sub&gt;0&lt;/sub&gt;) 
+* laser parameters in vacuum (a&lt;sub&gt;0&lt;/sub&gt;,t&lt;sub&gt;0&lt;/sub&gt;,w&lt;sub&gt;0&lt;/sub&gt;,x&lt;sub&gt;0&lt;/sub&gt;) &lt;sup&gt;1&lt;/sup&gt;
 * plasma target = continuous laminar flow gas cell &lt;br&gt;
 `\(\Rightarrow\)` longitudinal profile `\(n_e(x)\)`  `\(\propto\)` cell geometry
 
@@ -716,7 +716,7 @@ name: LPIsimulation
 * **Fast PIC** simulations
   - Azymuthal modes geometry
   - envelop approximation for the laser.  
-* laminar conductance rough model for cell geometry as CAD input
+* **laminar conductance rough model** for cell geometry as CAD input
 * CFD [Openfoam](https://www.openfoam.com/) / [snappyHexmesh](https://www.openfoam.com/documentation/guides/latest/doc/guide-meshing-snappyhexmesh.html)  couple to CAD 
 * Tracking particle code coupling [ASTRA](https://www.desy.de/~mpyflo/)/CODAL
 ]
@@ -761,7 +761,7 @@ Control of the exit down ramp is crucial !
 ---
 name: plasmatargetry2
 
-# plasma target
+# Plasma target
 
 ### develop engineering of laser-plasma accelerating structure 
 
@@ -791,7 +791,7 @@ next steps optimization of
 ---
 name: plasmatargetry3
 
-# plasma target
+# Plasma target
 
 ### prototype preliminary design 
 
@@ -814,10 +814,10 @@ name: plasmatargetry3
 ---
 name: plasmacell
 
-# plasma cell test bench
+#Plasma cell test bench
 
 .pull-left[
-dedicated test bench: 
+Dedicated test bench: 
 -  **fs intense laser driver **   `\(I \sim 5\times 10^{16}\, W.cm^{-2}\)` for plasma channel generation
 - **synchronized probe beam** for time resolved transverse interferometry 
 - high resolution **plasma density diagnostic** &lt;sup&gt;1&lt;/sup&gt; `\(\delta n_e \sim 5\times 10^{17} cm^{-3}\)`
@@ -833,7 +833,7 @@ dedicated test bench:
 
 ]
 
-view of the plasma test bench under commissioning with long testing cell&lt;sup&gt;3&lt;/sup&gt;
+View of the plasma test bench under commissioning with long testing cell&lt;sup&gt;3&lt;/sup&gt;
 
 .footnote[
 [1] [F. Brandi and L. A. Gizzi, High Pow Laser Sci Eng, vol. 7, p. e26, 2019](https://www.cambridge.org/core/product/identifier/S2095471919000112/type/journal_article); Phasics, ‘SID4 High resolution wavefront sensor, http://phasicscorp.com/cameras/sid4/ (2020).
@@ -850,7 +850,7 @@ view of the plasma test bench under commissioning with long testing cell&lt;sup&
 class: middle,center,inverse
 
 
-# electron beam control and transport
+# Electron beam control and transport
 
 
 ---
@@ -953,7 +953,7 @@ name: schedule
 .right[ &lt;img style="vertical-align:middle" src="img/logo-pia3.jpg" height="20px"/&gt; &lt;img style="vertical-align:middle" src="img/logo-cper.png" height="30px"/&gt; &lt;img style="vertical-align:middle" src="img/logo-upsay.png" height="30px"/&gt;&amp;emsp;&lt;img style="vertical-align:middle" src="img/logo-cnrs.png" height="30px"/&gt;]
  
 
-* equipment cost well identified **84 %** of the budget is consolidated. 
+* **84 %** of the budget is consolidated. 
 * budget relies on:
   - substantial support (564k€) from CNRS-IN2P3 to the master project PALLAS
   - projection of last year Université Paris Saclay support despite the growing activities 
@@ -975,8 +975,8 @@ name: resources
 
 &lt;img src="img/resources-2021.png" width="100%" /&gt;
 
-* strong engineering capacities on accelerator, laser, optics, plasma and experimentation 
-* delicate situation possible with ThomX delay
+* Strong engineering capacities on accelerator, laser, optics, plasma and experimentation 
+* Delicate situation possible with ThomX delay
 * Midterm FTE weakness PIC development for LPA (Smilei 1FTE) and theoretical on laser-plasma interaction must be reinforced
 
 .center[.orange[ Magnetism and beam line optics conception must be reinforced at the lab level]]
