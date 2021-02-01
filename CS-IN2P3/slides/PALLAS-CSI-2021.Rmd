@@ -35,10 +35,9 @@ opts_chunk$set(echo = FALSE,
                dpi = 300)
 xaringanExtra::use_panelset()
 xaringanExtra::use_clipboard()
-xaringanExtra::use_webcam()
 xaringanExtra::use_broadcast()
 xaringanExtra::use_share_again()
-xaringanExtra::style_share_again(share_buttons = c("twitter", "linkedin", "pocket"))
+xaringanExtra::style_share_again(share_buttons = c("twitter", "linkedin"))
 # uncomment the following lines if you want to use the NHS-R theme colours by default
 # scale_fill_continuous <- partial(scale_fill_nhs, discrete = FALSE)
 # scale_fill_discrete <- partial(scale_fill_nhs, discrete = TRUE)
@@ -49,14 +48,15 @@ xaringanExtra::style_share_again(share_buttons = c("twitter", "linkedin", "pocke
 ```{r metathis, echo=FALSE}
 library(metathis)
 meta() %>%
-  meta_name("github-repo" = "https://github.com/kevinCassou/slides") %>% 
+  meta_description("Presentation of PALLAS project at IN2P3 CS")
+  meta_name("github-repo" = "https://kevincassou.github.io/slides/CS-IN2P3/slides/") %>% 
   meta_social(
     title = "PALLAS PROJECT",
     description = paste(
       "laser-plasma accelerator test falicility @ IN2P3"
     ),
-    url = "https://build-your-own-universe.netlify.app",
-    image = "https://build-your-own-universe.netlify.app/social-card.png",
+    url = "https://kevincassou.github.io/slides/CS-IN2P3/slides/PALLAS-CSI-2021.html",
+    image = "https://box.in2p3.fr/index.php/s/pNLLcbYo6EtY8DP/preview",
     image_alt = paste(
       "CNRS/IN2P3/Université Paris-Saclay; IJClab:", 
       "Scale high-quality research data provisioning with R packages,", 
@@ -94,6 +94,24 @@ class: title-slide, left, bottom
 ### `r rmarkdown::metadata$author`
 ### `r rmarkdown::metadata$date`
 
+
+---
+class: left, middle
+
+# !Draft version
+
+
+
+- the authors will update continuously the slides (.orange[some back slides may appear])
+- the slides are interactive (.blue[link])
+- sensitive information as financial details are available on request (contact:  [<img style="vertical-align:middle" src="img/icon_mail.svg" height="24px"/>](mailto: cassou@lal.in2p3.fr))
+
+.footnote[
+Ce document est la propriété d’IJCLab et ne peut être ni reproduit ni diffusé sans autorisation du laboratoire.
+This document is written by the IJCLab. It is an IJCLab property and cannot be reproduced or communicated without this authorization.
+
+]
+
 ---
 class: center, middle
 
@@ -121,27 +139,27 @@ knitr::include_graphics("img/wakefield.png")
 ]
 
 .pull-right[
-laser driver :
+laser driver in underdense plasma ( $n_0\sim 10^{18}$ cm $^{-3}$)  :
 
 $$F_p = -m_e c^2 \nabla (a^2/2)$$
 $$a = eE_L/ m_e\omega_L c$$
-non linear regime $a>1$, in 1D, plasma wakefield, density pertubation: s 
+non linear regime $a>1$, in 1D, plasma wakefield, density pertubation:  
 
 $$\frac{\delta n}{ n_0} =\frac{1}{2} \left[ \frac{1+a^2}{(1+\phi)^2}-1\right]$$
 ]
 
 .pull-left[
 
-.green[**+**] High accelerating field, $E_0 = 96\sqrt{n_0}\,\,[V/m]$ <sup>1</sup>
+.green[**+**] **High accelerating field**, $E_0 \sim 100\,$ GV/m<sup>1</sup>
 
-.green[**+**] ultra short bunches, $\sim10$fs  <sup>2</sup>
+.green[**+**] **ultra short bunches**, $\sim10$ fs  <sup>2</sup>
 ]
 
 .pull-right[
 
-.red[-] tiny transient structure  $\sim10\mu$m
+.red[-] **tiny transient structure**  $\sim10\mu$m
 
-.red[-] hard to control $\rightarrow$ large fluctuation
+.red[-] **hard to control** $\rightarrow$ large fluctuation
 
 ]
 
@@ -303,17 +321,17 @@ knitr::include_graphics("img/bubble_regime.svg")
 
 ---
 name: lpaexp
-# typical laser plasma experimental setup
+# typical laser-plasma experimental setup
 
 For production of $100<E<500$ MeV, in a large vacuum chamber: 
 
 .pull-left[
 **laser:**
 
-- energy : 0.5-2J,
-- duration: 30-40fs
+- energy : 0.5-2 J,
+- duration: 30-40 fs
 - waist : 10-20 um
-- repetition rate:1-10Hz
+- repetition rate:1-10 Hz
 
 
 **Plasma:**
@@ -331,6 +349,10 @@ knitr::include_graphics("img/lpa-exp.png")
 ```
 .tiny[src: *Mangles, S. P. D. et al. Nature 431, 535–8 (2004)* ]
 ]
+<br>
+<br>
+<br>
+.center[.orange[**transition from proof of principle towards accelerators and reliable sources for application**]]
 
 ---
 
@@ -363,7 +385,7 @@ knitr::include_graphics("img/coxinel.png")
 
 - LPI : injection by ionization / gas cell 
 - Effort on reliability and control since first electron in 2016
-- Electron beam stable with large energy spread ~~15%~~<sup>3</sup> .red[~1%]<sup4</sup>, peak brightness ~ 0.5 pC/MeV @ 1Hz 
+- Electron beam stable with large energy spread ~~15%~~<sup>3</sup> .red[~1%]<sup4</sup>, peak brightness  ~~0.5~~ .red[5] pC/MeV @ 1Hz 
 
 ```{r echo=FALSE, out.width="110%"}
 knitr::include_graphics("img/lux.png")
@@ -424,7 +446,7 @@ knitr::include_graphics("img/laplace-pallas.png")
 
 --
 
-.blue[**12/2020**]: **PIA3-PACIFICS** national project accepted,pending to final financial arbitration .orange[75% funding confirmed].  
+.blue[**12/2020**]: **PIA3-PACIFICS** national project accepted, pending to final financial arbitration .orange[75% funding confirmed].  
 
 
 
@@ -434,11 +456,12 @@ name: lpa-in2p3
 
 .panelset[
 .panel[.panel-name[LASERIX facility]
-**LASERIX** 40 TW, 10Hz laser driver of the .pink[Université Paris Saclay] with unique features in the « new world » of research :
 
-- Constant maintenance and upgrade by Université Paris Sud over a decade (~130k€/year + >800k€ investment CPER) 
+.pink[**LASERIX**] **40 TW, 10 Hz** laser driver of the .pink[Université Paris Saclay] with unique features in the « new world » of research :
+
+- Constant maintenance and upgrade by Université Paris Sud over a decade (~130k€/year + >800k€ investment CPER POLA) 
 - Aggregation of unique competencies in a cohesive team
-- Localization close to a radiation shielded area NEPAL (PHIL) 
+- Localization close to a **radiation shielded area NEPAL** (PHIL) 
 - Part of the material to upgrade the laser system to 300 TW<sup>1</sup>, 0.1Hz existing
 
 .center[
@@ -499,7 +522,7 @@ name: pallas-objectives
 
 # Objectives
 
-Build a laser-plasma **accelerator test facility** aiming to achieve reliability and control comparable to conventional RF accelerator standards.
+Build a laser-plasma **accelerator test facility** aiming to achieve **reliability** and **control** comparable to conventional **RF accelerator** standards.
 
 Push LPA technological development starting with a **laser-plasma injector** (**LPI**) prototype
 
@@ -527,11 +550,11 @@ name: pallas-parameters
 .pull-left[
 
 - EuPRAXIA parameters for technical design study <sup>1</sup>
-- Staged effort on control and not ultimate performance 
+- Staged effort on control
 - continuous 10 Hz beam to enable machine studies
 
 .small[
-| Parameters | value phase 1 | value phase 2 | value phase 3 | unit | 
+| Parameters | phase 1 | phase 2 | phase 3 | unit | 
 | --:| :--:|:--:|:--:| --:|
 | energy  | 150  | 200 | 200 | MeV |
 | charge  | 15-30 | 30 | 30 | pC |
@@ -544,19 +567,18 @@ name: pallas-parameters
 ]
 
 .pull-right[
-```{r echo=FALSE, out.width="80%"}
+```{r echo=FALSE, out.width="85%"}
 knitr::include_graphics("img/lpi-soa.png")
 ```
 
 ]
-
-.small[
-Nota bene : **value phase 3** are considered at the virtual entrance of a second laser-plasma accelerating stage.
+.small[ Nota bene : **value phase 3** are considered at the virtual entrance of a second laser-plasma accelerating stage.
 ]
 .footnote[
 
 [1] R. Assmann, ‘EuPRAXIA Conceptual Design Report’, Hamburg, 2019. [Online]. Available: https://desycloud.desy.de/index.php/s/X37pwaJxEGi2God.
 
+[2] *src image : A. Irman, M. Downer et al. (2018)*
 
 ]
 
@@ -579,15 +601,15 @@ name: approach
 **Online control (laser / electron)**
 
 - <img src="img/logo-tango.png" height="20px"/> control command, <img src="img/logo-adacore.png" height="20px"/> webpage based UI
-- Full  10GB/s network acquisition, 10Hz time-stamping, automated data-storage 
+- Full  10 GB/s network acquisition, 10Hz time-stamping, automated data-storage 
 - Design oriented for and to ease for application of .pink[**Machine Learning**]  
 
 --
 
 **Stepwise approach (cost / complexity)**
 
-- .qblue[**staged implementation**] : from the source to more and more complex electron beamline
-- .qblue[**parallel development**] : [plasma cell test bench](#plasmacell) , online laser field control [ML-COLA]()<sup>1</sup> 
+- .qblue[**Staged implementation**] : from the source characterization to more and more complex electron beamline
+- .qblue[**Parallel development**] : [plasma cell test bench](#plasmacell) , online laser field control [ML-COLA]()<sup>1</sup> 
 - .qblue[**Simulation support**]: reinforce collaboration between experimental and numerical people
 
 .center[ .orange[**Open to the community in the spirit of accelerator development:  OpenHardware / OpenData**]]
@@ -619,7 +641,7 @@ ML-COLA: P2IO project (2021-2022), V. Kubytskyi and M. Pittman *Proof of the pri
 
  .center[.red[** => target prototype**]]
 
-* **e- characterization beam line**: .blue[ simple characterization beamline : orbit,charge,energy,divergence, dE/E ]
+* **e- characterization beam line**: .blue[ simple characterization beamline : charge,energy,divergence,emittance dE/E ]
 
 
 
@@ -629,17 +651,17 @@ ML-COLA: P2IO project (2021-2022), V. Kubytskyi and M. Pittman *Proof of the pri
 
 .panel[.panel-name[phase 2]
 
-### 2023-2024: laser driver upgrade 
+### 2023-2024: laser driver and electron beamline upgrade 
 
 * **laser driver upgrade** on target: $\tau_l= 37 \rightarrow 30$ fs, $E_{L,t} = 1.3 \rightarrow 2.5$ J 
   - same amplifier larger Ti:Sa crystal,  one more pump laser<br>
   - ultra broadband Dazzler for high order spectral phase correction 
 
-* **upgrade of electron beamline**
-  - beam position monitor, beam emittance
-  - focusing to be decided. 
+* **upgrade of electron beamline** : on the base of phase 1 measurements : BPM, focusing section and correctors. 
   
-* beam quality & control optimization studies $\Rightarrow$ feedback development 
+* beam quality & control optimization studies $\Rightarrow$ correlation [laser,plasma,electron] $\Rightarrow$ feedback development 
+
+* longitudinal phase space diagnostic development 
 
 * .qblue[electron transport technical design studies] 
 
@@ -654,7 +676,7 @@ ML-COLA: P2IO project (2021-2022), V. Kubytskyi and M. Pittman *Proof of the pri
 
 * installation of the complete electron beam transport line (for staging or application delivery, focused beam)
 
-* installation end diagnostic station 
+* installation of the end diagnostic station 
 
 * commissioning and optimization of the **full LPI**
 
@@ -667,30 +689,54 @@ ML-COLA: P2IO project (2021-2022), V. Kubytskyi and M. Pittman *Proof of the pri
 
 
 ---
-name: lasercontrol
+name: lasercontrol1
 
 # laser performances & control
 
-.orange[**100 TW class laser system = complex system**] 
+.orange[**50-100 TW class laser system = complex system**] 
 
-* control of the laser driver is the key 
+overview of the laser driver system
 
-  * 38 CCDs
-  * 6 points energy measurement
-  * 3 spectrometers
-  * 1 dazzler + wizzler [.red[spectral control loop]]
-  * 1 deformable mirror + wavefront sensor [.blue[spatial control loop]]
-  * 2 active pointing stabilization system [.dgrey[target value 0.2urad (RMS)]]
-  * pulse duration in the interaction region
-  
-      
-* bring **errors** of laser pulse properties (E, t, Sr) **below <1%**.
+```{r echo=FALSE, out.width="100%",fig.pos="!b"}
+knitr::include_graphics("img/lpa-driver-scheme1-V2-current.svg")   
+```
 
-* **add** online development of **laser field** monitoring (spatio-temporal distortion) 
+---
+name: lasercontrol3
 
-* full data-logging and gateway to accelerator control   
+# laser performances & control
 
-.red[AJOUTER PLOT STAB E_L + GRAPH STC  ]
+current status: 
+.pull-left[
+```{r echo=FALSE, out.width="100%",fig.pos="!b"}
+knitr::include_graphics("img/laserEstab.png")   
+```
+]
+
+.pull-right[
+```{r echo=FALSE, out.width="100%",fig.pos="!b"}
+knitr::include_graphics("img/laserstab.png")
+```
+]
+
+**+** laser pulse duration $\tau_l = 40\,\pm 3$ fs stability  <10% (RMS)
+
+.center[.orange[bring **errors** of laser pulse properties (E, t, Sr) **below <1%**]]
+
+
+---
+name: lasercontrol2
+
+# laser performances & control
+
+
+```{r echo=FALSE, out.width="100%",fig.pos="!b"}
+knitr::include_graphics("img/lpa-driver-scheme1-V2.svg")   
+```
+
+* **add** active beam .dgrey[**pointing stabilization**] <img style="vertical-align:middle" src="img/icon_detail.svg" height="20px"/>  
+* **add** online development of .orange[**laser field spatio-temporal distortion**] monitoring  <img style="vertical-align:middle" src="img/icon_detail.svg" height="20px"/>  
+* full **data-logging** and **gateway** to accelerator control commande <img style="vertical-align:middle" src="img/icon_detail.svg" height="20px"/>  
 
 ---
 name: LPIsimulation
@@ -708,8 +754,8 @@ $\Rightarrow$ longitudinal profile $n_e(x)$  $\propto$ cell geometry
 * **Fast PIC** simulations
   - Azymuthal modes geometry
   - envelop approximation for the laser.  
-* laminar conductance rough model as input for cell geometry
-* CFD Openfoam / snappyHexmesh  couple to CAD 
+* laminar conductance rough model for cell geometry as CAD input
+* CFD [Openfoam](https://www.openfoam.com/) / [snappyHexmesh](https://www.openfoam.com/documentation/guides/latest/doc/guide-meshing-snappyhexmesh.html)  couple to CAD 
 * Tracking particle code coupling [ASTRA](https://www.desy.de/~mpyflo/)/CODAL
 ]
 .pull-right[
@@ -727,7 +773,7 @@ name: plasmatargetry1
 
 ### develop engineering of laser-plasma accelerating structure 
 
-Characteristics length of a plasma target for LPI ( $10^{18} \leq n_e \leq 10^{19}\,$ cm $^{-3}$ ) :
+**Characteristics length** of a plasma target for LPI ( $10^{18} \leq n_e \leq 10^{19}\,$ cm $^{-3}$ ) :
 
 - Rayleigh length of the laser  &emsp; $\,\rightarrow\,$ &emsp; $Z_r=\pi w_0^2/\lambda_0 \sim 1.3\,$mm
 - Plasma wavelength &emsp; &emsp; &emsp; &emsp; $\rightarrow$ &emsp; $\lambda_p \approx 10-30\,\mu m$ 
@@ -754,13 +800,19 @@ name: plasmatargetry2
 
 ### develop engineering of laser-plasma accelerating structure 
 
+.pull-left[
+design
 * add *control-variable* to the plasma profile 
 * multi-zone cell 
 
-Example of preliminary studies results 
+preliminary studies results 
+* chair-like density profile
+* downramp assisted localized ionization
+]
+
 
 .pull-left[
-```{r echo=FALSE, out.width="70%"}
+```{r echo=FALSE, out.width="100%"}
 knitr::include_graphics("img/lpi-prelim.svg")
 ```
 ]
@@ -830,6 +882,35 @@ view of the plasma test bench under commissioning with long testing cell<sup>3</
 name:eCBL1
 
 # Electron beam line 
+### main challenges
+
+
+.left-column[
+```{r echo=FALSE, out.width="100%"}
+knitr::include_graphics("img/lpa-beamline-ppe1.svg")
+```
+]
+
+.right-column[
+**main difficulties already highlighted in the literature:**
+
+* laser removal from *e-* path
+* *e-* divergence
+* large $\Delta E/E$
+* low charge and 15-20% fluctuations 
+* orbit stability
+* sensitivity to error
+* bunch lengthening
+
+**our strategy = stepwise approach **
+
+* well known beam properties
+* minimize divergence at the source
+* energy selection in the peak
+* transverse / longitudinal manipulation
+* maximize flexibility
+]
+
 
 ---
 name:eCBL2
@@ -837,12 +918,63 @@ name:eCBL2
 # Electron beam line 
 
 
+.center[
+```{r echo=FALSE, out.width="70%"}
+knitr::include_graphics("img/lpi-ecbl1.png")
+```
+]
+
+.pull-left[
+### *e-* beam characterization
+* start from PIC simulation parameters
+* explore different capture/focusing scenario
+* magnets with remote online alignment 
+* robust diagnostics: Yag screen, faraday cups
+* emittance measurement 
+* wide angular acceptance spectrometer
+* correctors and BPM 
+]
+
+.pull-right[
+### beam/laser/plasma correlations
+
+* single shot characterized diags / SNR 
+* online control laser/plasma/magnets (including magnets alignment)
+* machine learning correction 
+]
+
+.center[.orange[**+** **additional diagnostic** prevously tested on our photo-injector PHIL for beam duration and **longitudinal phase-space** measurement (THz-TDS cavity)]]
+
+
+
 ---
 name:eCBL3
 
 # Electron beam line 
 
+.center[
+```{r echo=FALSE, out.width="70%"}
+knitr::include_graphics("img/lpi-ecbl2.png")
+```
+]
 
+.pull-left[
+### transport line for staging
+
+**incoupling/outcoupling driver**: 
+chicane,dogleg;  plasma mirror
+
+**focus close to plasma exit** : Quapeva; plasma lens
+
+**energy spread**: demixing chicane; D-chicane
+
+**Orbit**: Response matrix; lattice optimization in the dogleg
+]
+
+.pull-right[
+
+
+]
 
 ---
 name: schedule
@@ -851,8 +983,18 @@ name: schedule
 
 .right[ <img style="vertical-align:middle" src="img/logo-pia3.jpg" height="20px"/> <img style="vertical-align:middle" src="img/logo-cper.png" height="30px"/> <img style="vertical-align:middle" src="img/logo-upsay.png" height="30px"/>&emsp;<img style="vertical-align:middle" src="img/logo-cnrs.png" height="30px"/>]
  
- 
+
+* equipment cost well identified **84 %** of the budget is consolidated. 
+* budget relies on:
+  - substantial support (564k€) from CNRS-IN2P3 to the master project PALLAS
+  - projection of last year Université Paris Saclay support despite the growing activities 
+
+<br>
+<br>
+
+.center[
 [not available online, see submitted document]
+]
 
 ---
 name: resources
@@ -868,7 +1010,7 @@ knitr::include_graphics("img/resources-2021.png")
 
 * strong engineering capacities on accelerator, laser, optics, plasma and experimentation 
 * delicate situation possible with ThomX delay
-* Mid term FTE weakness PIC development for LPA (Smilei 1FTE) and theoretical on laser-plasma interaction must be reinforced
+* Midterm FTE weakness PIC development for LPA (Smilei 1FTE) and theoretical on laser-plasma interaction must be reinforced
 
 .center[.orange[ Magnetism and beam line optics conception must be reinforced at the lab level]]
 
@@ -914,15 +1056,25 @@ name: summary
 # Summary
 
 
-* Unique opportunities to build a 10Hz laser-plasma accelerator test facility
+* Unique opportunities to build a **10Hz laser-plasma accelerator test facility**
 
-* Complementary to national effort at CNRS-INP (LAPLACE, ApoLLon) in the EuPRAXIA context  
+* **Push back the laser-plasma technology frontiers** to high reliability and control  
 
-* Push back the laser-plasma technology frontiers to high reliability and control  
+* **Complementary** to national effort at CNRS-INP (LAPLACE, ApoLLon) in the **EuPRAXIA context**  
+* Strategy align with [*2020 Update of European Strategy for Particle Physic*, preamble p. 8](https://cds.cern.ch/record/2721370/files/CERN-ESU-015-2020%20Update%20European%20Strategy.pdf) : 
+.small[
+  >Innovative accelerator technology underpins the physics reach of high-energy and high-intensity colliders. It is also a powerful driver for many accelerator-based fields of science and industry. **The technologies under consideration include** high-field magnets, high-temperature superconductors, **plasma wakefield acceleration** and other high-gradient accelerating structures, bright muon beams, energy recovery linacs. The European particle physics community **must intensify accelerator R&D and sustain it with adequate resources**. A roadmap should **prioritise the technology**, taking into account synergies with international partners and other communities such as photon and neutron sources, fusion energy and industry. Deliverables for this decade should be defined in a timely fashion and coordinated among CERN and national laboratories and institutes.
+]
 
-* Reinforce IN2P3 competences and position in future innovative accelerator technologies
 
-* Partly funded (ANR-PIA3, Université Paris Saclay, CPER) a strong financial support of 564 k€ over 2022-2025 is required
+
+
+ **@IN2P3**  :  Reinforce competences and position in future innovative accelerator technologies
+
+ **Requirement for IN2P3** : Partly funded (ANR-PIA3, Université Paris Saclay, CPER) <br>
+ 
+ .center[a strong financial support of 564 k€ over 2022-2025 is required to the IN2P3]
+
 
 
 
@@ -970,4 +1122,22 @@ knitr::include_graphics("img/SOA-LPA.png")
 ]
 
 .small[*Note : all references at the end*]
+  
+  
+---
+name: laserediag
+
+# laser control details
+
+* control of the laser driver is the key 
+
+  * 38 CCDs
+  * 6 points energy measurement
+  * 3 spectrometers
+  * 1 dazzler + wizzler [.red[spectral control loop]]
+  * 1 deformable mirror + wavefront sensor [.blue[spatial control loop]]
+  * 2 active pointing stabilization system [.dgrey[target value 0.2urad (RMS)]]
+  * pulse duration in the interaction region
+  
+  
   
