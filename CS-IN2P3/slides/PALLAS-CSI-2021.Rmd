@@ -704,8 +704,8 @@ name: lasercontrol1
 
 overview of the laser driver system
 
-```{r echo=FALSE, out.width="90%",fig.pos="!b"}
-knitr::include_graphics("img/lpa-driver-scheme1.svg")   
+```{r echo=FALSE, out.width="100%",fig.pos="!b"}
+knitr::include_graphics("img/laserdriver1.svg")   
 ```
 
 ---
@@ -736,8 +736,8 @@ name: lasercontrol2
 
 # Laser performances & control
 
-```{r echo=FALSE, out.width="90%",fig.pos="!b"}
-knitr::include_graphics("img/lpa-driver-scheme2.svg")   
+```{r echo=FALSE, out.width="100%",fig.pos="!b"}
+knitr::include_graphics("img/laserdriver2.svg")   
 ```
 
 * **add** active beam .dgrey[**pointing stabilization**] <img style="vertical-align:middle" src="img/icon_detail.svg" height="20px"/>  
