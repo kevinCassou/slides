@@ -418,11 +418,11 @@ class: inverse, middle center
 ---
 name: national
 
-# national overview 
+# National overview 
 
 .blue[**07/2019**]: <img style="vertical-align:top" src="img/logo-gdrappel.png" height="36px"/> discussion 2 projects emerged structuring a potential French contribution to <img style="vertical-align:middle" src="img/logo-eupraxia.png" height="52px"/>
 
-```{r echo=FALSE, out.width="110%"}
+```{r echo=FALSE, out.width="100%"}
 knitr::include_graphics("img/laplace-pallas.png")
 ```
 
@@ -452,7 +452,7 @@ knitr::include_graphics("img/laplace-pallas.png")
 
 ---
 name: lpa-in2p3
-# laser-plasma R&D @ IN2P3 ? 
+# Laser-plasma R&D @ IN2P3 ? 
 
 .panelset[
 .panel[.panel-name[LASERIX facility]
@@ -698,14 +698,14 @@ class: middle,center,inverse
 ---
 name: lasercontrol1
 
-#Laser performances & control
+# Laser performances & control
 
 .orange[**50-100 TW class laser system = complex system**] 
 
 overview of the laser driver system
 
-```{r echo=FALSE, out.width="100%",fig.pos="!b"}
-knitr::include_graphics("img/lpa-driver-scheme1-V2.png")   
+```{r echo=FALSE, out.width="90%",fig.pos="!b"}
+knitr::include_graphics("img/lpa-driver-scheme1.svg")   
 ```
 
 ---
@@ -736,9 +736,8 @@ name: lasercontrol2
 
 # Laser performances & control
 
-
-```{r echo=FALSE, out.width="100%",fig.pos="!b"}
-knitr::include_graphics("img/lpa-driver-scheme2-V2.png")   
+```{r echo=FALSE, out.width="90%",fig.pos="!b"}
+knitr::include_graphics("img/lpa-driver-scheme2.svg")   
 ```
 
 * **add** active beam .dgrey[**pointing stabilization**] <img style="vertical-align:middle" src="img/icon_detail.svg" height="20px"/>  
@@ -954,7 +953,7 @@ knitr::include_graphics("img/lpa-beamline-ppe1.svg")
 ---
 name:eCBL2
 
-# Electron beam line 
+# Electron beam line : characterization to control 
 
 
 .center[
@@ -989,7 +988,7 @@ knitr::include_graphics("img/lpi-ecbl1.png")
 ---
 name:eCBL3
 
-# Electron beam line 
+# Electron beam line: transport
 
 .center[
 ```{r echo=FALSE, out.width="70%"}
