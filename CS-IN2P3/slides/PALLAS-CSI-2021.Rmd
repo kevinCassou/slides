@@ -704,8 +704,7 @@ name: lasercontrol1
 
 overview of the laser driver system
 
-```{r echo=FALSE, out.width="100%",fig.pos="!b"}
-knitr::include_graphics("img/laserdriver1.svg")   
+![](img/laserdriver1.svg)   
 ```
 
 ---
@@ -736,9 +735,7 @@ name: lasercontrol2
 
 # Laser performances & control
 
-```{r echo=FALSE, out.width="100%",fig.pos="!b"}
-knitr::include_graphics("img/laserdriver2.svg")   
-```
+![](img/laserdriver2.svg)   
 
 * **add** active beam .dgrey[**pointing stabilization**] <img style="vertical-align:middle" src="img/icon_detail.svg" height="20px"/>  
 * **add** online development of .orange[**laser field spatio-temporal distortion**] monitoring  <img style="vertical-align:middle" src="img/icon_detail.svg" height="20px"/>  
@@ -756,21 +753,21 @@ class: middle,center,inverse
 ---
 name: LPIsimulation
 
+# Laser-plasma injector source 
 
-# Laser-plasma injector design 
 .pull-left[
 .blue[**Input**] 
-* laser parameters in vacuum (a<sub>0</sub>,t<sub>0</sub>,w<sub>0</sub>,x<sub>0</sub>) <sup>1</sup>
-* plasma target = continuous laminar flow gas cell <br>
+* **laser parameters** in vacuum (a<sub>0</sub>,t<sub>0</sub>,w<sub>0</sub>,x<sub>0</sub>) <sup>1</sup>
+* .qblue[**plasma target**] = continuous laminar flow gas cell <br>
 $\Rightarrow$ longitudinal profile $n_e(x)$  $\propto$ cell geometry
 
 .blue[**Tools:**] 
 
 * **Fast PIC** simulations
-  - Azymuthal modes geometry
-  - envelop approximation for the laser.  
-* **laminar conductance rough model** for cell geometry as CAD input
-* CFD [Openfoam](https://www.openfoam.com/) / [snappyHexmesh](https://www.openfoam.com/documentation/guides/latest/doc/guide-meshing-snappyhexmesh.html)  couple to CAD 
+  - Azimuthal modes geometry
+  - envelope approximation for the laser.  
+* **Laminar conductance rough model** for cell geometry as CAD input
+* **CFD** [Openfoam](https://www.openfoam.com/) / [snappyHexmesh](https://www.openfoam.com/documentation/guides/latest/doc/guide-meshing-snappyhexmesh.html)  couple to CAD 
 * Tracking particle code coupling [ASTRA](https://www.desy.de/~mpyflo/)/CODAL
 ]
 .pull-right[
@@ -789,7 +786,7 @@ knitr::include_graphics("img/lpi-optimization.svg")
 ---
 name: plasmatargetry1
 
-# plasma target
+# Plasma target
 
 ### develop engineering of laser-plasma accelerating structure 
 
@@ -827,14 +824,14 @@ multi-zone cell design
 
 preliminary PIC studies results 
 * chair-like density profile
-* SMILEI( AM + envelop)
+* SMILEI( AM + envelope)
 <br>
 
 => downramp assisted localized ionization
 
-next steps optimization of 
-1. injection $Q \Delta E/E$
-2. beam emittance 
+Next steps 
+1. optimization of injection ( $Q \Delta E/E$ ) 
+2. beam emittance  
 
 
 ]

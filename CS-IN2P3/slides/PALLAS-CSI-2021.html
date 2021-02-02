@@ -658,7 +658,8 @@ name: lasercontrol1
 
 overview of the laser driver system
 
-&lt;img src="img/laserdriver1.svg" width="100%" /&gt;
+![](img/laserdriver1.svg)   
+```
 
 ---
 name: lasercontrol3
@@ -684,7 +685,7 @@ name: lasercontrol2
 
 # Laser performances &amp; control
 
-&lt;img src="img/laserdriver2.svg" width="100%" /&gt;
+![](img/laserdriver2.svg)   
 
 * **add** active beam .dgrey[**pointing stabilization**] &lt;img style="vertical-align:middle" src="img/icon_detail.svg" height="20px"/&gt;  
 * **add** online development of .orange[**laser field spatio-temporal distortion**] monitoring  &lt;img style="vertical-align:middle" src="img/icon_detail.svg" height="20px"/&gt;  
@@ -702,21 +703,21 @@ class: middle,center,inverse
 ---
 name: LPIsimulation
 
+# Laser-plasma injector source 
 
-# Laser-plasma injector design 
 .pull-left[
 .blue[**Input**] 
-* laser parameters in vacuum (a&lt;sub&gt;0&lt;/sub&gt;,t&lt;sub&gt;0&lt;/sub&gt;,w&lt;sub&gt;0&lt;/sub&gt;,x&lt;sub&gt;0&lt;/sub&gt;) &lt;sup&gt;1&lt;/sup&gt;
-* plasma target = continuous laminar flow gas cell &lt;br&gt;
+* **laser parameters** in vacuum (a&lt;sub&gt;0&lt;/sub&gt;,t&lt;sub&gt;0&lt;/sub&gt;,w&lt;sub&gt;0&lt;/sub&gt;,x&lt;sub&gt;0&lt;/sub&gt;) &lt;sup&gt;1&lt;/sup&gt;
+* .qblue[**plasma target**] = continuous laminar flow gas cell &lt;br&gt;
 `\(\Rightarrow\)` longitudinal profile `\(n_e(x)\)`  `\(\propto\)` cell geometry
 
 .blue[**Tools:**] 
 
 * **Fast PIC** simulations
-  - Azymuthal modes geometry
-  - envelop approximation for the laser.  
-* **laminar conductance rough model** for cell geometry as CAD input
-* CFD [Openfoam](https://www.openfoam.com/) / [snappyHexmesh](https://www.openfoam.com/documentation/guides/latest/doc/guide-meshing-snappyhexmesh.html)  couple to CAD 
+  - Azimuthal modes geometry
+  - envelope approximation for the laser.  
+* **Laminar conductance rough model** for cell geometry as CAD input
+* **CFD** [Openfoam](https://www.openfoam.com/) / [snappyHexmesh](https://www.openfoam.com/documentation/guides/latest/doc/guide-meshing-snappyhexmesh.html)  couple to CAD 
 * Tracking particle code coupling [ASTRA](https://www.desy.de/~mpyflo/)/CODAL
 ]
 .pull-right[
@@ -733,7 +734,7 @@ name: LPIsimulation
 ---
 name: plasmatargetry1
 
-# plasma target
+# Plasma target
 
 ### develop engineering of laser-plasma accelerating structure 
 
@@ -771,14 +772,14 @@ multi-zone cell design
 
 preliminary PIC studies results 
 * chair-like density profile
-* SMILEI( AM + envelop)
+* SMILEI( AM + envelope)
 &lt;br&gt;
 
 =&gt; downramp assisted localized ionization
 
-next steps optimization of 
-1. injection `\(Q \Delta E/E\)`
-2. beam emittance 
+Next steps 
+1. optimization of injection ( `\(Q \Delta E/E\)` ) 
+2. beam emittance  
 
 
 ]
