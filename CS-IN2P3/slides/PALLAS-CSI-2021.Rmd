@@ -34,7 +34,6 @@ opts_chunk$set(echo = FALSE,
                fig.height = 4,
                dpi = 300)
 xaringanExtra::use_panelset()
-xaringanExtra::use_clipboard()
 xaringanExtra::use_broadcast()
 xaringanExtra::use_share_again()
 xaringanExtra::style_share_again(share_buttons = c("twitter", "linkedin"))
@@ -536,7 +535,7 @@ Research and development lines :
 2. development of .blue[**plasma targetry**] => plasma cell
 3. electron .orange[**beam control and transport**]
 
-**=>** Achieved fully optimized control LPI  
+**=>** Achieved fully optimized and controlled LPI  
 
 .center[*First brick of a more ambitious beamline with second plasma stage (LPAS) or applications*]
 
@@ -602,7 +601,7 @@ name: approach
 
 - <img src="img/logo-tango.png" height="20px"/> control command, <img src="img/logo-adacore.png" height="20px"/> webpage based UI
 - Full  10 GB/s network acquisition, 10Hz time-stamping, automated data-storage 
-- Design oriented for and to ease for application of .pink[**Machine Learning**]  
+- Design oriented for and to ease application of .pink[**Machine Learning**] technics
 
 --
 
@@ -829,8 +828,8 @@ preliminary PIC studies results
 => downramp assisted localized ionization
 
 Next steps 
-1. optimization of injection ( $Q \Delta E/E$ ) 
-2. beam emittance  
+1. optimization of injection ( $Q E/\Delta E$ ) 
+2. beam emittance preservation   
 
 
 ]
@@ -972,8 +971,8 @@ knitr::include_graphics("img/lpi-ecbl1.png")
 .pull-right[
 ### beam/laser/plasma correlations
 
-* single shot characterized diags / SNR 
-* online control laser/plasma/magnets (including magnets alignment)
+* **single shot** characterized **diags** / SNR 
+* **online control** laser/plasma/magnets
 * machine learning correction 
 ]
 
@@ -1013,14 +1012,14 @@ knitr::include_graphics("img/lpa-transport.png")
 ]
 
 ---
-name: schedule
+name: costs
 
-# Schedule & costs
+# Budget & costs
 
 .right[ <img style="vertical-align:middle" src="img/logo-pia3.jpg" height="20px"/> <img style="vertical-align:middle" src="img/logo-cper.png" height="30px"/> <img style="vertical-align:middle" src="img/logo-upsay.png" height="30px"/>&emsp;<img style="vertical-align:middle" src="img/logo-cnrs.png" height="30px"/>]
  
 
-* **84 %** of the budget is consolidated. 
+* **84 %** of the equipment budget is consolidated. 
 * budget relies on:
   - substantial support (564k€) from CNRS-IN2P3 to the master project PALLAS
   - projection of last year Université Paris Saclay support despite the growing activities 
@@ -1031,6 +1030,15 @@ name: schedule
 .center[
 [not available online, see submitted document]
 ]
+
+
+---
+name: schedule
+
+# Schedule
+
+
+.center[schedule to be updated]
 
 ---
 name: resources
@@ -1046,9 +1054,9 @@ knitr::include_graphics("img/resources-2021.png")
 
 * Strong engineering capacities on accelerator, laser, optics, plasma and experimentation 
 * Delicate situation possible with ThomX delay
-* Midterm FTE weakness PIC development for LPA (Smilei 1FTE) and theoretical on laser-plasma interaction must be reinforced
+* Midterm FTE weakness **PIC code development** for LPA (Smilei 1FTE) and theoretical on laser-plasma interaction must be reinforced
 
-.center[.orange[ Magnetism and beam line optics conception must be reinforced at the lab level]]
+.center[.orange[ Magnetism and beam dynamic must be reinforced at the lab level]]
 
 ---
 name: swot
@@ -1107,9 +1115,7 @@ name: summary
 
  **@IN2P3**  :  Reinforce competences and position in future innovative accelerator technologies
 
- **Requirement for IN2P3** : Partly funded (ANR-PIA3, Université Paris Saclay, CPER) <br>
- 
- .center[a strong financial support of 564 k€ over 2022-2025 is required to the IN2P3]
+ **Requirement for IN2P3** : a strong financial support of 564 k€ over 2022-2025 is required to the IN2P3 + 2 post-doc and doc positions.
 
 
 
