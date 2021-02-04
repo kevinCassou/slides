@@ -142,7 +142,7 @@ non linear regime `\(a&gt;1\)`, in 1D, plasma wakefield, density pertubation:
 .footnote[
 [1] E. Esarey, *et al.* (2009), [doi: 10.1103/RevModPhys.81.1229](https://doi.org/10.1103/RevModPhys.81.1229)
 
-[2] O. Lundh, *et al.* (2011),[doi: 10.1038/s41598-020-73805-7](http://www.nature.com/articles/s41598-020-73805-7)
+[2] O. Lundh, *et al.* (2011),[doi: 10.1038/s41598-020-73805-7](http://www.nature.com/articles/s41598-020-73805-7), src img Hansson et al. Phd (2016)
 ]
 
 
@@ -1091,15 +1091,26 @@ name: laserediag
 
 # laser control &amp; diags details
 
-* control of the laser driver is the key 
+control of the laser driver is the key 
 
-  * 38 CCDs
-  * 6 points energy measurement
-  * 3 spectrometers
-  * 1 dazzler + wizzler [.red[spectral control loop]]
-  * 1 deformable mirror + wavefront sensor [.blue[spatial control loop]]
-  * 2 active pointing stabilization system [.dgrey[target value 0.2urad (RMS)]]
-  * pulse duration in the interaction region
+  * 38 CCDs + (12)
+  * 6 points energy measurement (+2)
+  * 3 spectrometers (+1)
+  * .orange[**spectral control loop**]: ultra broadband dazzler + additional wizzler =&gt; correct higher phase order 
+  * .blue[**spatial control loop**]:  large aperture deformable mirror + wavefront sensor =&gt; Get high Strehl ratio ( `\(S_r&gt;0.8\)` ) and work on intermediate field homogeneity.
+  * .red[**pointing stabilization system**] : .dgrey[target value 0.2urad (RMS)!!] &lt;br&gt;
+  Spectral side band injection from osscillator for high bandwidth (&gt; 400 Hz ) pointing correction &lt;br&gt;
+  Scanning lightweight SiC mirror for large beam stabilization. 
+.center[  
+&lt;img src="img/mirror-SiC.jpg" width="15%" /&gt;
+]
+  * high accuracy pulse duration measurement in the interaction region : test most reliable technics fast reconstruction technics&lt;sup&gt;1&lt;/sup&gt; including pulse front-tilt.
+  
+.footnote[
+
+[1] [N. C. Geib, *et al.* , ‘Common pulse retrieval algorithm: a fast and universal method to retrieve ultrashort pulses’, Optica, vol. 6, no. 4, p. 495, Apr. 2019](https://doi.org/10.1364/OPTICA.6.000495.)
+
+]
   
   
   
