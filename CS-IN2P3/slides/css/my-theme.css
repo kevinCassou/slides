@@ -38,3 +38,16 @@ div.my-footer span {
   border-radius: 3px;
   padding: 4px;
 }
+
+/* custom.css */
+.left-code {
+  color: #777;
+  width: 30%;
+  height: 92%;
+  float: left;
+}
+.right-plot {
+  width: 68%;
+  float: right;
+  padding-left: 1%;
+}
