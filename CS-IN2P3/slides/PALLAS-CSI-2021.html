@@ -131,6 +131,8 @@ Required beam parameters are : **energy spread &lt;1%; beam brightness 5 pC/MeV;
 
 ]
 
+.center[.orange[a transition has started toward potential reliable sources and laser-plasma accelerators]]
+
 .footnote[
 
 [1] [M. Labat et al., Phys. Rev. Accel. Beams, vol. 21, no. 11, p. 114802, Nov. 2018](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.21.114802);  [T. André et al., Nat Commun, vol. 9, no. 1, p. 1334, Dec. 2018](http://www.nature.com/articles/s41467-018-03776-x) 
@@ -399,7 +401,7 @@ name: lasercontrol1
 
 .orange[**30-100 TW class laser system = complex system**] 
 
-overview of the LASERIX laser driver system
+overview of the LASERIX Ti:Sa chirped pulse amplification laser driver system
 
 ![](img/laserdriver1.svg)   
 
@@ -408,7 +410,7 @@ name: lasercontrol3
 
 # Laser performances &amp; control
 
-current status without feedback and optimization: 
+current status without feedback : 
 .pull-left[
 &lt;img src="img/laserEstab.png" width="100%" /&gt;
 ]
@@ -458,10 +460,8 @@ name: plasmatargetry1
 Tailoring plasma density profile: 
 
 - **to control injection** : density down-ramp assisted truncated ionization injection &lt;sup&gt;1&lt;/sup&gt; 
- in unmatched laser condition &lt;br&gt; `\(\Rightarrow\)` narrowing of the injection length &lt;sup&gt;2&lt;/sup&gt;
-
+`\(\Rightarrow\)` narrowing of the injection length &lt;sup&gt;2&lt;/sup&gt;
 - **tune** the injected **charge / beam loading** &lt;sup&gt;3&lt;/sup&gt;
-
 - **tune** e- **beam energy** / acceleration length
 - **limit emittance growth** at the exit of the plasma / minimized Twiss parameters  &lt;br&gt; `\(\Rightarrow\)`
 Control of the exit down ramp is crucial !  
@@ -476,31 +476,46 @@ name: plasmadensity
 .left-code[
 example of simulation 
 * LASERIX laser input
-* generic shape for `\(n_e(x)\)` inspired from various ref
-* parameter : `\(x_{foc,vac}\)` 
+* generic shape for .qblue[n&lt;sub&gt;e&lt;/sub&gt;(x)] inspired from various ref&lt;sup&gt;1&lt;/sup&gt;
+* parameter : .black[x&lt;sub&gt;foc,vac&lt;/sub&gt;]
 
 
 
 multi-cell to get access to each region tuning : 
 
   * length and density  
-  * dopant CN&lt;sub&gt;2&lt;/sub&gt;(x) 
+  * dopant C&lt;sub&gt;N&lt;sub&gt;2&lt;/sub&gt;&lt;/sub&gt;(x) 
+  
+  
+.black[Open ways to:
+* optimization 
+* control 
+]
+
 ]
 .right-plot[
 
-&lt;img src="img/fig-cs2.svg" width="100%" /&gt;
+&lt;img src="img/fig-cs2.svg" width="98%" /&gt;
 ]
 
+.footnote[
+[1] [G. Golovin et al., Phys. Rev. ST Accel. Beams,**18**,1,011301,(2015)](https://doi.org/ 10.1103/PhysRevSTAB.18.011301); [M. Mirzaie et al., Sci Rep,**5**,1,14659,(2015)](https://doi.org/10.1038/srep14659).
+; [A. Irman et al., Plasma Phys. Control. Fusion, **60**, 4,044015,(2018)](https://doi.org/10.1088/1361-6587/aaaef1), [P. Lee, et al., Phys. Rev. Accel. Beams, **21**,5, 052802, (2018)](https://doi.org/10.1103/PhysRevAccelBeams.21.052802).
+
+
+
+
+]
 
 ---
 name: LPIsimulation
 
-# Laser-plasma injector source 
+# Optimization of the LPI core 
 
 .pull-left[
 .blue[**Input**] 
 * **laser parameters** in vacuum (a&lt;sub&gt;0&lt;/sub&gt;,t&lt;sub&gt;0&lt;/sub&gt;,w&lt;sub&gt;0&lt;/sub&gt;,x&lt;sub&gt;0&lt;/sub&gt;) &lt;sup&gt;1&lt;/sup&gt;
-* .qblue[**plasma target**] = continuous laminar flow gas cell &lt;br&gt;
+* .qblue[**plasma target**]:  continuous laminar flow gas cell &lt;br&gt;
 `\(\Rightarrow\)` `\(n_e(x)\)`  `\(\propto\)` cell geometry + `\(Q_i\)` gas flow
 
 .blue[**Tools:**] 
@@ -718,13 +733,13 @@ chicane,dogleg;  plasma mirror
 
 ### 2023-2024: laser driver and electron beamline upgrade 
 
-* **laser driver upgrade** on target: `\(\tau_l= 37 \rightarrow 30\)` fs, `\(E_{L,t} = 1.3 \rightarrow 2.5\)` J 
+* **laser driver upgrade** on target: `\(\tau_l= 40 \rightarrow 30\)` fs, `\(E_{L,t} = 1.3 \rightarrow 2.5\)` J 
   - same amplifier larger Ti:Sa crystal,  one more pump laser&lt;br&gt;
   - ultra broadband Dazzler for high order spectral phase correction 
 
 * **upgrade of electron beamline** : on the base of phase 1 measurements : BPM, focusing section and correctors. 
   
-* beam quality &amp; control optimization studies `\(\Rightarrow\)` correlation [laser,plasma,electron] `\(\Rightarrow\)` feedback development 
+* **beam quality &amp; control optimization studies** `\(\Rightarrow\)` correlation [laser,plasma,electron] `\(\Rightarrow\)` feedback development 
 
 * longitudinal phase space diagnostic development 
 
@@ -804,7 +819,41 @@ name: swot
 
 # SWOT analysis 
 
-![](img/pallas-swot.png)
+.pull-left[
+
+.blue[**Strengths**] 
+
+* Unique 10Hz laser-plasma accelerator test facility with &gt;22 weeks/year beam time   
+* State of the art laser driver supported (operation) by Université Paris-Saclay 
+* Strong engineering support  
+
+.orange[**Opportunities**]
+* link with SMILEI team 
+* EuPRAXIA 
+* Plasma cell development for other LPA experiments
+* Industrial collaboration
+
+]
+
+.pull-right[
+
+**Weaknesses**
+
+* No magnet services in the lab. 
+* Limited funding. 
+* Starting late in competitive and dynamic domain
+* organization/administration.
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+.orange[**Threats**]
+
+* ASN 
+* Some spares can not be covered by the budget.
+
+]
+
 
 
 
@@ -1095,7 +1144,7 @@ For production of `\(100&lt;E&lt;500\)` MeV, in a large vacuum chamber:
 
 - target: supersonic gas jet 1-4 mm/gas cell 1-50mm, capillary discharge (&gt;50mm)
 - gas: `\(H_2\)` or `\(He\)` ( `\(+0.1-10\% N_2\)` )
-- density: `\(1-50\times10^{18}\)` `\(W/cm^2\)` 
+- density: `\(1-50\times10^{18}\)` `\(cm^{-3}\)` 
 
 ]
 
@@ -1157,12 +1206,8 @@ name:
 
 
 
-.pull-left[
-
-]
-
-.pull-right[
-&lt;img src="img/lpi-soa.png" width="100%" /&gt;
+.center[
+&lt;img src="img/lpi-soa.png" width="50%" /&gt;
 ]
 
 

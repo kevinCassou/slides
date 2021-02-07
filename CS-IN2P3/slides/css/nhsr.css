@@ -172,7 +172,8 @@ blockquote {
 }
 
 /*-- CUSTOM CLASSES FOR TEXT EMPHASIS --*/
-.blue       { color:   #193046 }
+.blue       { color:   #1c344b }
+.black      { color:   #000000 }
 .qblue      { color:   #456487 }
 .green      { color:   #345741 }
 .pink       { color:   #5C0029 }
