@@ -93,30 +93,18 @@ class: title-slide, left, bottom
 ### `r rmarkdown::metadata$author`
 ### `r rmarkdown::metadata$date`
 
-
----
-class: left, middle
-
-# !Draft version
-
-
-
-- the authors will update continuously the slides (.orange[some back slides may appear])
-- the slides are interactive (.blue[link])
-- sensitive information as financial details are available on request (contact:  [<img style="vertical-align:middle" src="img/icon_mail.svg" height="24px"/>](mailto: cassou@lal.in2p3.fr))
-
-.footnote[
-Ce document est la propriété d’IJCLab et ne peut être ni reproduit ni diffusé sans autorisation du laboratoire.
-This document is written by the IJCLab. It is an IJCLab property and cannot be reproduced or communicated without this authorization.
-
-]
-
 ---
 class: center, middle
 
 ## on behalf ot the team 
 
 ![](img/pallas-team-2021.png)
+
+.footnote[
+Ce document est la propriété d’IJCLab et ne peut être ni reproduit ni diffusé sans autorisation du laboratoire.
+This document is written by the IJCLab. It is an IJCLab property and cannot be reproduced or communicated without this authorization.
+
+]
 
 ---
 
@@ -323,11 +311,12 @@ name: pallas-parameters
 
 - .blue[EuPRAXIA] parameters for technical design study <sup>1</sup>
 
-- continuous 10 Hz beam to enable machine studies
+- **continuous 10 Hz** beam to enable machine studies
 ]
 
 
 .pull-right[
+<br>
 
 .small[
 | Parameters | phase 1 | phase 2 | phase 3 | unit | 
@@ -359,7 +348,7 @@ name: pallas-parameters
 
 
 Configuration of the LPI : laser driver, plasma,   
-
+<br>
 .center[
 .small[
 | Parameters | phase 1 | phase 2 | phase 3 | unit | 
@@ -495,13 +484,13 @@ name: plasmatargetry1
 - Plasma wavelength &emsp; &emsp; &emsp; &emsp; $\rightarrow$ &emsp; $\lambda_p \approx 10-30\,\mu m$ 
 - Betatron wavelength  &emsp; &emsp; &emsp; $\,\,\,\,\rightarrow$ &emsp; $\lambda_\beta =\sqrt{2\gamma_e}\lambda_p \sim 250-800\,\mu m$ 
 
-Tailoring plasma density profile: 
+**Tailoring plasma density profile**: 
 
-- **to control injection** : density down-ramp assisted truncated ionization injection <sup>1</sup> 
+- **.qblue[to control injection]** : density down-ramp assisted truncated ionization injection <sup>1</sup> <br>
 $\Rightarrow$ narrowing of the injection length <sup>2</sup>
-- **tune** the injected **charge / beam loading** <sup>3</sup>
-- **tune** e- **beam energy** / acceleration length
-- **limit emittance growth** at the exit of the plasma / minimized Twiss parameters  <br> $\Rightarrow$
+- **.blue[tune]** the injected **.qblue[charge / beam loading]** <sup>3</sup>
+- **tune** e- **.qblue[beam energy]** / acceleration length
+- **limit .qblue[emittance growth]** at the exit of the plasma / minimized Twiss parameters  <br> $\Rightarrow$
 Control of the exit down ramp is crucial !  
 
 .center[ .red[**... in only few mm**]  ]
@@ -512,22 +501,23 @@ name: plasmadensity
 # Plasma density profile : an illustration
 
 .left-code[
-example of simulation 
+Example of simulation:  
 * LASERIX laser input
 * generic shape for .qblue[n<sub>e</sub>(x)] inspired from various ref<sup>1</sup>
 * parameter : .black[x<sub>foc,vac</sub>]
 
 
 
-multi-cell to get access to each region tuning : 
+mMulti-cell to get access to each region tuning : 
 
   * length and density  
   * dopant C<sub>N<sub>2</sub></sub>(x) 
   
   
 .black[Open ways to:
-* optimization 
-* control 
+* Fine optimization 
+* Control
+* Tolerancing
 ]
 
 ]
@@ -576,7 +566,7 @@ knitr::include_graphics("img/lpi-optimization.svg")
 ]
 
 <br>
-.center[.orange[all the ingredient for a full numerical optimization of the plasma cell ...]]
+.center[.orange[all the ingredient for a **full numerical optimization** of the plasma cell ...]]
 
 .footnote[
 [1] in phase 1 : limited to $a_0=1.15\pm0.8$ and $\tau_L = 40\pm3$ fs (FWHM) 
@@ -706,10 +696,11 @@ knitr::include_graphics("img/lpi-ecbl1.png")
 * start from PIC simulation parameters
 * explore different capture/focusing scenarii
 * magnets with remote alignment 
-* robust diagnostics: Yag screen, faraday cups
-* emittance measurement 
-* wide angular acceptance spectrometer
 * correctors and BPM 
+* robust diagnostics: Yag screen, faraday cups
+* wide angular acceptance spectrometer
+* emittance measurement 
+
 ]
 
 .pull-right[
@@ -1128,7 +1119,7 @@ but evolution of the method using unmatched<sup>3</sup> laser conditions
 
 .pull-right[
 
-```{r echo=FALSE, out.width="65%"}
+```{r echo=FALSE, out.width="75%"}
 knitr::include_graphics("img/ionization_injection.png")
 ```
 
@@ -1234,7 +1225,7 @@ knitr::include_graphics("img/lpa-exp.png")
 <br>
 <br>
 <br>
-.center[.orange[**transition from proof of principle towards accelerators and reliable sources for application**]]
+
 
 
 ---
@@ -1245,11 +1236,11 @@ LPA a .orange[**one**] parameter optimization performer
 
 .center[
 ```{r echo=FALSE, out.width="90%"}
-knitr::include_graphics("img/SOA-LPA.png")
+knitr::include_graphics("img/stateoftheart-lpa.png")
 ```
 ]
 
-.small[*Note : all references at the end*]
+.small[*Note : contact for detail references*]
   
   
 ---
