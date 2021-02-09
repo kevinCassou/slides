@@ -693,13 +693,12 @@ knitr::include_graphics("img/lpi-ecbl1.png")
 
 .pull-left[
 ### *e-* beam characterization
-* start from PIC simulation parameters
-* explore different capture/focusing scenarii
-* magnets with remote alignment 
-* correctors and BPM 
-* robust diagnostics: Yag screen, faraday cups
-* wide angular acceptance spectrometer
-* emittance measurement 
+**Design**: start from PIC simulation parameters <br> **+** explore different capture/focusing scenarii <br>
+**Beamline**: magnets with remote alignment <br>
+**+** correctors and BPM <br>
+**Diags**:  robust diagnostics: Yag screen, faraday cups<br>
+**+** wide angular acceptance spectrometer <br> **+**
+emittance measurement 
 
 ]
 
@@ -829,11 +828,11 @@ name: costs
   - substantial support (564k€) from CNRS-IN2P3 to the master project PALLAS
   - projection of last year Université Paris Saclay support despite the growing activities 
 
-<br>
-<br>
 
 .center[
-[not available online, see submitted document]
+```{r echo=FALSE, out.width="75%"}
+knitr::include_graphics("img/pallas-budget-202102.png")
+```
 ]
 
 
@@ -843,8 +842,8 @@ name: schedule
 # Schedule
 
 .center[
-```{r echo=FALSE, out.width="75%"}
-knitr::include_graphics("img/Schedule-pallas.png")
+```{r echo=FALSE, out.width="100%"}
+knitr::include_graphics("img/pallas-gantt-p1.png")
 ```
 ]
 
@@ -1274,7 +1273,7 @@ knitr::include_graphics("img/mirror-SiC.jpg")
 
 
 ---
-name: 
+name:lpi-injection 
 # LPI parameters versus injection 
 
 
@@ -1284,6 +1283,12 @@ name:
 knitr::include_graphics("img/lpi-soa.png")
 ```
 ]
+
+
+---
+name: organization
+background-image: url("img/pallas-wbs-v4.png")
+background-size: cover
 
 
   
