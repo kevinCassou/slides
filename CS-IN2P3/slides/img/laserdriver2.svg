@@ -13,8 +13,8 @@
    version="1.1"
    id="svg1454"
    sodipodi:docname="laserdriver2.svg"
-   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
-   inkscape:export-filename="/Users/cassou/temp/slides/CS-IN2P3/slides/img/lpa-driver-scheme2-v2.png"
+   inkscape:version="1.0.2 (e86c8708, 2021-01-15)"
+   inkscape:export-filename="/Users/cassou/ALPe/PALLAS/99_VARIOUS/50ansIN2P3/lpa-driver-scheme2-v2.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96">
   <metadata
@@ -161,21 +161,22 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1981"
-     inkscape:window-height="1246"
+     inkscape:window-width="1440"
+     inkscape:window-height="855"
      id="namedview1456"
      showgrid="false"
      inkscape:snap-global="true"
      inkscape:measure-start="0,0"
      inkscape:measure-end="0,0"
      inkscape:zoom="1.1130769"
-     inkscape:cx="60.642693"
-     inkscape:cy="450"
+     inkscape:cx="1079.4402"
+     inkscape:cy="424.84451"
      inkscape:window-x="41"
-     inkscape:window-y="1"
+     inkscape:window-y="23"
      inkscape:window-maximized="0"
-     inkscape:current-layer="g1218"
-     showguides="false" />
+     inkscape:current-layer="g479"
+     showguides="false"
+     inkscape:document-rotation="0" />
   <g
      inkscape:groupmode="layer"
      id="layer1"
@@ -258,7 +259,7 @@
        x="611.65045"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
-         style="font-size:13.33333302px;fill:#4d4d4d"
+         style="font-size:13.3333px;fill:#4d4d4d"
          y="381.07281"
          x="611.65045"
          id="tspan5380"
@@ -280,7 +281,7 @@
      x="441.73978"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
      xml:space="preserve"><tspan
-       style="font-size:13.33333302px;fill:#4d4d4d"
+       style="font-size:13.3333px;fill:#4d4d4d"
        y="252.30721"
        x="441.73978"
        id="tspan5386"
@@ -304,7 +305,7 @@
        x="458.50482"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
-         style="font-size:13.33333302px;fill:#4d4d4d"
+         style="font-size:13.3333px;fill:#4d4d4d"
          y="350.50482"
          x="458.50482"
          id="tspan5392"
@@ -333,7 +334,7 @@
          id="tspan449"
          x="807.50482"
          y="266.50482"
-         style="font-size:13.33333302px;fill:#4d4d4d">spectral pase</tspan></text>
+         style="font-size:13.3333px;fill:#4d4d4d">spectral pase</tspan></text>
   </g>
   <g
      id="g583"
@@ -358,7 +359,7 @@
          id="tspan5427"
          x="1043.0096"
          y="532.39807"
-         style="font-size:13.33333302px;fill:#4d4d4d">temporal profile</tspan></text>
+         style="font-size:13.3333px;fill:#4d4d4d">temporal profile</tspan></text>
   </g>
   <g
      id="g5456"
@@ -379,7 +380,7 @@
        x="1002.9126"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
-         style="font-size:13.33333302px;fill:#4d4d4d"
+         style="font-size:13.3333px;fill:#4d4d4d"
          y="337.38351"
          x="1002.9126"
          id="tspan5433"
@@ -408,7 +409,7 @@
          id="tspan5439"
          x="1002.9126"
          y="299.51944"
-         style="font-size:13.33333302px;fill:#4d4d4d">spatial profile [-ZR,ZR]</tspan></text>
+         style="font-size:13.3333px;fill:#4d4d4d">spatial profile [-ZR,ZR]</tspan></text>
   </g>
   <g
      id="g1752"
@@ -429,7 +430,7 @@
        x="1130.0096"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0px;word-spacing:0px;fill:#f9f9f9;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
-         style="font-size:13.33333302px;fill:#f9f9f9"
+         style="font-size:13.3333px;fill:#f9f9f9"
          y="421.39807"
          x="1130.0096"
          id="tspan5460"
@@ -461,18 +462,13 @@
        x="0" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.03508759px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75187969"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.0351px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75188"
        x="12.418936"
        y="22.277319"
-       id="text3374"><tspan
-         sodipodi:role="line"
-         id="tspan3372"
-         x="12.418936"
-         y="34.695084"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.75187969" /></text>
+       id="text3374" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.03007507px;line-height:1.25;font-family:sans;-inkscape-font-specification:'sans Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75187969"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.0301px;line-height:1.25;font-family:sans;-inkscape-font-specification:'sans Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75188"
        x="7.309073"
        y="19.357397"
        id="text3378"><tspan
@@ -480,7 +476,7 @@
          id="tspan3376"
          x="7.309073"
          y="19.357397"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ffffff;stroke-width:0.75187969">laser oscillator</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ffffff;stroke-width:0.75188">laser oscillator</tspan></text>
   </g>
   <g
      style="display:inline"
@@ -800,7 +796,7 @@
          id="tspan5833"
          x="611.65045"
          y="381.07281"
-         style="font-size:13.33333302px;fill:#4d4d4d">spectrum</tspan></text>
+         style="font-size:13.3333px;fill:#4d4d4d">spectrum</tspan></text>
   </g>
   <g
      transform="translate(345.56508,116.0499)"
@@ -821,7 +817,7 @@
        x="611.65045"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
-         style="font-size:13.33333302px;fill:#4d4d4d"
+         style="font-size:13.3333px;fill:#4d4d4d"
          y="344.17963"
          x="611.65045"
          id="tspan5841"
@@ -850,7 +846,7 @@
          id="tspan5849"
          x="611.65045"
          y="306.31555"
-         style="font-size:13.33333302px;fill:#4d4d4d">spatial profile</tspan></text>
+         style="font-size:13.3333px;fill:#4d4d4d">spatial profile</tspan></text>
   </g>
   <g
      id="g479"
@@ -871,11 +867,11 @@
        x="745.50482"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
-         style="font-size:13.33333302px;fill:#4d4d4d"
+         style="font-size:13.3333px;fill:#4d4d4d"
          y="266.50482"
          x="745.50482"
          id="tspan473"
-         sodipodi:role="line">spatial pase</tspan></text>
+         sodipodi:role="line">spatial phase</tspan></text>
   </g>
   <g
      id="g533"
@@ -900,7 +896,7 @@
          id="tspan521"
          x="640.95142"
          y="402.87381"
-         style="font-size:13.33333302px;fill:#4d4d4d">pointing</tspan></text>
+         style="font-size:13.3333px;fill:#4d4d4d">pointing</tspan></text>
   </g>
   <g
      id="g559"
@@ -925,7 +921,7 @@
          id="tspan547"
          x="821.95142"
          y="437.87381"
-         style="font-size:13.33333302px;fill:#4d4d4d">pointing</tspan></text>
+         style="font-size:13.3333px;fill:#4d4d4d">pointing</tspan></text>
   </g>
   <g
      transform="translate(-45.697071,90.651857)"
@@ -946,7 +942,7 @@
        x="1002.9126"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
-         style="font-size:13.33333302px;fill:#4d4d4d"
+         style="font-size:13.3333px;fill:#4d4d4d"
          y="299.51944"
          x="1002.9126"
          id="tspan571"
@@ -971,7 +967,7 @@
        x="640.95142"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
-         style="font-size:13.33333302px;fill:#4d4d4d"
+         style="font-size:13.3333px;fill:#4d4d4d"
          y="402.87381"
          x="640.95142"
          id="tspan595"
@@ -1000,7 +996,7 @@
          id="tspan603"
          x="1002.9126"
          y="337.38351"
-         style="font-size:13.33333302px;fill:#4d4d4d">energy</tspan></text>
+         style="font-size:13.3333px;fill:#4d4d4d">energy</tspan></text>
   </g>
   <g
      id="g615"
@@ -1021,7 +1017,7 @@
        x="611.65045"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
-         style="font-size:13.33333302px;fill:#4d4d4d"
+         style="font-size:13.3333px;fill:#4d4d4d"
          y="306.31555"
          x="611.65045"
          id="tspan611"
@@ -1046,7 +1042,7 @@
        x="821.95142"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
-         style="font-size:13.33333302px;fill:#4d4d4d"
+         style="font-size:13.3333px;fill:#4d4d4d"
          y="437.87381"
          x="821.95142"
          id="tspan619"

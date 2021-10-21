@@ -655,7 +655,7 @@ knitr::include_graphics("img/plasmacell-testbench.png")
 
 ]
 
-View of the plasma test bench under commissioning with long testing gas cell from Esculap project<sup>3</sup>
+.small[View of the plasma test bench under commissioning with long testing gas cell from Esculap project (*N. Delerue, K. Wang, S. Jenzer, et al.*) <sup>3</sup>]
 
 .footnote[
 [1] [F. Brandi and L. A. Gizzi, High Pow Laser Sci Eng, vol. 7, p. e26, 2019](https://www.cambridge.org/core/product/identifier/S2095471919000112/type/journal_article); Phasics, ‘SID4 High resolution wavefront sensor, http://phasicscorp.com/cameras/sid4/ (2020).
