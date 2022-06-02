@@ -457,7 +457,7 @@ name: plasmacell
 Dedicated test bench for plasma cell: 
 -  **fs intense laser driver **   $I \sim 5\times 10^{16}\, W.cm^{-2}$ for plasma channel generation
 - **synchronized probe beam** for time resolved transverse interferometry 
-- high resolution **plasma density diagnostic** <sup>1</sup> $\delta n_e \sim 5\times 10^{17} cm^{-3}$
+- high resolution **plasma density diagnostic** <sup>1</sup> $\delta n_e \sim 1.5\times 10^{17} cm^{-3}$
 - spectral imaging for **dopant spatial distribution control** <sup>2</sup>
 - multiple **mass-flow controlled gas injection**
 - continuous flow target operation with **two stages differential pumping**
@@ -488,6 +488,8 @@ name: summary
 
 # Summary
 
+<br>
+<br>
 
 * Unique opportunities to build a **10Hz laser-plasma accelerator test facility** with an exciting program for the next 5 years.   
 

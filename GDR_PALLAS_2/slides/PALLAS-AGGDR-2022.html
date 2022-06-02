@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>PALLAS project status</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Kevin CASSOU" />
+    <script src="libs/header-attrs-2.14/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/panelset-0.2.4/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset-0.2.4/panelset.js"></script>
+    <script src="libs/js-cookie-3.0.0/js.cookie.js"></script>
+    <script src="libs/peerjs-1.3.1/peerjs.min.js"></script>
+    <script src="libs/tiny.toast-1.0.0/toast.min.js"></script>
+    <link href="libs/xaringanExtra-broadcast-0.2.4/broadcast.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-broadcast-0.2.4/broadcast.js"></script>
+    <script src="libs/clipboard-2.0.6/clipboard.min.js"></script>
+    <link href="libs/shareon-1.4.1/shareon.min.css" rel="stylesheet" />
+    <script src="libs/shareon-1.4.1/shareon.min.js"></script>
+    <link href="libs/xaringanExtra-shareagain-0.2.4/shareagain.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-shareagain-0.2.4/shareagain.js"></script>
+    <meta name="description" content="Presentation of PALLAS project at IN2P3 CS"/>
+    <meta name="github-repo" content="https://kevincassou.github.io/slides/CS-IN2P3/slides/"/>
+    <meta name="twitter:title" content="PALLAS PROJECT"/>
+    <meta name="twitter:description" content="laser-plasma accelerator test falicility @ IN2P3"/>
+    <meta name="twitter:url" content="https://kevincassou.github.io/slides/CS-IN2P3/slides/PALLAS-CSI-2021.html"/>
+    <meta name="twitter:image:src" content="https://box.in2p3.fr/index.php/s/pNLLcbYo6EtY8DP/preview"/>
+    <meta name="twitter:image:alt" content="CNRS/IN2P3/Université Paris-Saclay; IJClab: Scale high-quality research data provisioning with R packages, presented at AG GDR APPEL IN2P3 2022/05/12 by K. Cassou"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:creator" content="@Cassoukevin"/>
+    <meta name="twitter:site" content="@IJClab"/>
+    <meta property="og:title" content="PALLAS PROJECT"/>
+    <meta property="og:description" content="laser-plasma accelerator test falicility @ IN2P3"/>
+    <meta property="og:url" content="https://kevincassou.github.io/slides/CS-IN2P3/slides/PALLAS-CSI-2021.html"/>
+    <meta property="og:image" content="https://box.in2p3.fr/index.php/s/pNLLcbYo6EtY8DP/preview"/>
+    <meta property="og:image:alt" content="CNRS/IN2P3/Université Paris-Saclay; IJClab: Scale high-quality research data provisioning with R packages, presented at AG GDR APPEL IN2P3 2022/05/12 by K. Cassou"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="en_US"/>
+    <meta property="article:author" content="CNRS/IN2P3/IJClab"/>
+    <link rel="stylesheet" href="css/nhsr.css" type="text/css" />
+    <link rel="stylesheet" href="css/nhsr-fonts.css" type="text/css" />
+    <link rel="stylesheet" href="css/my-theme.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+
+layout: true 
+
+&lt;div class="my-header"&gt;&lt;/div&gt;
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;
+&lt;img style="vertical-align:middle" src="img/logo-cnrs.png" height="15px"/&gt; &amp;emsp;
+&lt;img style="vertical-align:middle" src="img/logo-IJCLab.png" height="15px"/&gt; &amp;emsp; 
+
+| &amp;emsp; IJClab/PALLAS &amp;emsp; | &amp;emsp; AG GDR APPEL &amp;emsp; | &amp;emsp; 2022/05/12 &amp;emsp;  |
+&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;
+&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;
+ &lt;/span&gt;&lt;/div&gt;
+
+
+---
+class: title-slide, left, bottom
+
+# PALLAS project status
+----
+## .blue[**laser-plasma accelerator test facility @ IN2P3**]
+### Kevin CASSOU
+### 
+
+---
+class: center, middle
+
+## on behalf ot the team 
+
+![](img/pallas-team-2021.png)
+
+.footnote[
+Ce document est la propriété d’IJCLab et ne peut être ni reproduit ni diffusé sans autorisation du laboratoire.
+This document is written by the IJCLab. It is an IJCLab property and cannot be reproduced or communicated without this authorization.
+
+]
+
+
+---
+
+# LPA ... key-technology for future e- accelerator?  
+
+### promising technology for future accelerator 
+
+* compactness of the accelerating strucutures  
+* multi-GeV machine single or dual stage is the threshold to be competitive respect to RF tech 
+* injector or accelerating stages ? maybe both 
+  * DESY moonshot
+  * any  RF &gt; 150 MeV dedicated to external injection ARES-SINBAD ?
+  * AWAKE a CERN-case ... 
+
+### large collection of challenges 
+
+* low energy efficiency
+* LPA ... one parameter demonstration performer 
+* stability and control still order magnitude under RF conventional machine  
+* beam quality 
+
+### European context : EUPRAXIA &amp;  two-tier transition
+
+  * major accelerator labs considered LPA 
+  * historical laser lab move from experimental demonstration to source/accelerator reliable operation 
+
+
+---
+name: lpa-in2p3
+# Laser-plasma R&amp;D @ IN2P3 ? 
+
+.panelset[
+.panel[.panel-name[LASERIX facility]
+
+.pink[**LASERIX**] **40 TW, 10 Hz** laser driver of the .pink[Université Paris Saclay] with unique features in the short term project funded research :
+
+- **Constant maintenance and upgrade** by Université Paris Sud over a more than a decade (~130k€/year + &gt;800k€ investment CPER POLA) 
+- Aggregation of unique competencies in a cohesive team
+- Localization close to a **radiation shielded area NEPAL** (PHIL) 
+- Part of the material to upgrade the laser system to 300 TW&lt;sup&gt;1&lt;/sup&gt;, 0.1Hz existing
+
+.center[
+&lt;img src="img/laserix-system.png" width="25%" /&gt;
+]
+.tiny[
+[1] Ref. F. Ple et al., "Design and demonstration of a high-energy booster amplifier for a high-repetition rate petawatt class laser system," Opt. Lett. 32, 238-240 (2007)
+]
+
+]
+.panel[.panel-name[SMILEI numerical platform]
+
+&lt;img style="vertical-align:middle" src="img/logo-smilei.png" height="32px"/&gt;  numerical experimental platform  [&lt;img style="vertical-align:middle" src="img/icon_github.png" height="32px"/&gt;](https://smileipic.github.io/Smilei/) &amp;emsp;&amp;emsp;&amp;emsp;&lt;img style="vertical-align:middle" src="img/logo-mds.png" height="32px"/&gt; &lt;img style="vertical-align:middle" src="img/logo-llr.png" height="32px"/&gt; &lt;img style="vertical-align:middle" src="img/logo-luli.png" height="32px"/&gt;
+
+- High performance / high fidelity  open source PIC-code, recent development bringing unique feature in a super competitive domain of HPC simulation 
+.center[
+&lt;img src="img/smilei.png" width="30%" /&gt;
+]
+- Collaboration project : .blue[**VIRTUAL LAPLACE**] gathering the community (LLR,LOA, IJClab) to access to GENCI HPC resources : successful grant on the **A9**, **A11** genci call [A. Beck talk]()
+&lt;br&gt;
+.tiny[
+[ref.] [J. Derouillat *et al.*, ‘Smilei : A collaborative, open-source, multi-purpose particle-in-cell code for plasma simulation’, Computer Physics Communications, vol. 222, pp. 351–373. 2018](https://doi.org/10.1016/j.cpc.2017.09.024) ; [F. Massimo, *et al.*, Phys. Rev. E, vol. 102, no. 3, p. 033204, 2020](https://doi.org/10.1103/PhysRevE.102.033204)
+
+]
+
+
+]
+.panel[.panel-name[Environment]
+
+**+** [&lt;img style="vertical-align:middle" src="img/logo-gdrappel.png" height="52px"/&gt; : scientific discussion networking tool for the French LPA community](http://gdr-appel.fr/)
+
+- monthly news
+- thematic meeting (target, LPA application to medical sciences, etc.) 
+
+.orange[**+**] &lt;img style="vertical-align:middle" src="img/logo-apollon.png" height="32px"/&gt; High energy LPA program demonstration experiment lead by A. Specka (LLR) with an access to national multi-PW laser  infrastructure an [LFA](https://apollonlaserfacility.cnrs.fr/salle-longue-focale/) experiment zone. 
+
+.orange[**+**] high regional concentration of world leader laser &amp; photonic industrial companies
+
+.center[&lt;img style="vertical-align:middle" src="img/logo-amplitude.png" height="52px"/&gt;&amp;emsp; &amp;emsp; &lt;img style="vertical-align:middle" src="img/logo-thales.jpeg" height="62px"/&gt;&amp;emsp; &amp;emsp; &lt;img style="vertical-align:middle" src="img/logo-io.png" height="52px"/&gt;&amp;emsp; &amp;emsp; &lt;img style="vertical-align:middle" src="img/logo-sourcelab.png" height="62px"/&gt;&amp;emsp; &amp;emsp; &lt;img style="vertical-align:middle" src="img/logo-phasics.png" height="52px"/&gt; &lt;br&gt;
+&lt;img style="vertical-align:middle" src="img/logo-fastlite.png" height="22px"/&gt;&amp;emsp; &amp;emsp; &lt;img style="vertical-align:middle" src="img/logo-femtoeasy.png" height="22px"/&gt;]
+]
+]
+
+
+---
+class: inverse, middle center 
+
+# PALLAS project 
+
+
+---
+name: pallas-objectives
+
+# Objectives
+
+Build a laser-plasma **accelerator test facility** aiming to achieve **reliability** and **control** comparable to conventional **RF accelerator** standards.
+
+Push LPA technological development starting with a 10 Hz 150-200 MeV  **laser-plasma injector** (**LPI**) prototype
+
+&lt;img src="img/lpi.png" width="80%" /&gt;
+
+Research and development lines :
+
+1. advanced .red[**laser control**]
+2. development of .blue[**plasma targetry**] =&gt; plasma cell
+3. electron .dgrey[**beam control and transport**]
+
+Achieved fully optimized and controlled LPI  
+
+.center[.orange[**First brick of a more ambitious beamline with second plasma stage (LPAS) or applications**]]
+
+
+
+---
+name: pallas-parameters
+
+# Electron beam parameters
+
+.pull-left[
+Staged effort:  
+
+  - **phase 1** : laser optimization &amp; control, target &lt;br&gt;
+  first electron characterization
+  
+  - **phase 2** : laser and beamline upgrade &lt;br&gt;
+  electron beam optimization 
+  
+  - **phase 3** : transport beamline &lt;br&gt;
+  full LPI optimization 
+  
+
+
+.blue[**EuPRAXIA**] parameters for technical design study &lt;sup&gt;1&lt;/sup&gt;
+
+**continuous 10 Hz** beam to enable machine studies
+]
+
+
+.pull-right[
+&lt;br&gt;
+
+.small[
+| Parameters | phase 1 | phase 2 | phase 3 | unit | 
+| --:| :--:|:--:|:--:| --:|
+| energy  | 150  | **200** | 200 | MeV |
+| charge  | 15-30 | **30** | 30 | pC |
+| frep | 10 | 10 | 10 | Hz |
+| energy spread | &lt;10% | **&lt; 5% ** | &lt; 5% | peak (FWHM) |
+| `\(\varepsilon_{T,n}\)`  | 1 | **&lt;1** | &lt;1 | mm.mrad |
+| stability | 5% | **3%** | **1%** | -  |
+| reproductibility | 5% | **3%** | 3% | - | 
+]
+
+.small[ Nota bene : **value phase 3** are considered at the virtual entrance of a second laser-plasma accelerating stage.
+]
+
+]
+
+
+.footnote[
+
+[1] R. Assmann, ‘EuPRAXIA Conceptual Design Report’, Hamburg, 2019. [Online]. Available: https://desycloud.desy.de/index.php/s/X37pwaJxEGi2God.
+]
+
+---
+name: pallas-parameters
+
+# LPI parameters
+
+
+Configuration of the LPI : laser driver, plasma, ...  
+&lt;br&gt;
+.center[
+.small[
+| Parameters | phase 1 | phase 2 | phase 3 | unit | 
+| --:| :--:|:--:|:--:| --:|
+| laser strengh, `\(a_0\)`  | 1.0-1.4  | **&gt;1.8**  | **&gt;1.8** | |
+| laser duration, `\(t_L\)`  | 40 | **30** | **30** | fs (FWHM) |
+| laser waist, `\(w_0\)` | 18 | 18 | 18 | um |
+| Strehl ratio, `\(S_r\)` | **&gt; 0.8** | **&gt; 0.8** | **&gt; 0.8** |- |
+| beam pointing, `\(\delta u_i\)` | **&lt;0.5** | **&lt;0.5** | **&lt;0.5** | urad
+| stability  | 1% | **&lt;1%** | **&lt;1%** | -  |
+| frep | 10 | 10 | 10 | Hz |
+| target type | multi-cell | multi-cell |  multi-cell | -|
+| **injection** | STII | STII  | STII |  - |
+| electron beamline | *TBD* | *TBD* | *TBD* | - |
+]
+]
+
+
+.footnote[
+STII : Self truncated injection / downramp assisted ionization injection to be optimized &lt;br&gt;
+TBD : to be defined. 
+
+]
+
+
+---
+name: approach
+
+# Our approach 
+
+**Guidelines**  
+
+- .blue[**Modularity**] : accelerator divided in module 
+- .blue[**Reliability**] :  high performances laser optics 
+.orange[+] over sized optical compressor (350TW-class grating used @ 40TW) 
+.orange[+] optimized laser-driver diagnostic implementation 
+- .blue[**Compactness**] : [plasma target](#plasmatargetry2) integrated in the accelerator beamline 
+- .blue[**Scalable**] : to high repetition rate (starting in the middle range 10Hz)
+
+--
+
+**Online control (laser / electron)**
+
+- &lt;img src="img/logo-tango.png" height="20px"/&gt; control command, &lt;img src="img/logo-adacore.png" height="20px"/&gt; webpage based UI
+- Full  10 GB/s network acquisition, 10Hz time-stamping, automated data-storage 
+- Design oriented for and to ease application of .pink[**Machine Learning**] technics
+
+--
+
+**Stepwise approach (cost / complexity)**
+
+- .qblue[**Staged implementation**] : from the source characterization to more and more complex electron beamline
+- .qblue[**Parallel development**] : [plasma cell test bench](#plasmacell) , online laser field control [ML-COLA]()&lt;sup&gt;1&lt;/sup&gt; 
+- .qblue[**Simulation support**]: reinforce collaboration between experimental and numerical people
+
+.center[ .orange[**Open to the community in the spirit of accelerator development:  OpenHardware / OpenData**]]
+
+.footnote[
+ML-COLA: P2IO project (2021-2022), V. Kubytskyi and M. Pittman *Proof of the principle experiment of Machine Learning based online Characterization and Optimisation of a high intensity LAser pulse*.
+]s
+
+
+---
+
+# last progress in simulation SMILEI simulation
+
+&lt;br&gt;
+&lt;br&gt;
+
+## Please look to P. Drobniak, V. Kubytsky presentation @ 3rd SMILEI workshop or last GDR PALLAS status.  
+
+[https://indico.math.cnrs.fr/event/6911/timetable/](https://indico.math.cnrs.fr/event/6911/timetable/)
+
+
+
+---
+class: middle,center,inverse
+
+# Plasma target 
+
+
+---
+name: plasmatargetry1
+
+# Plasma target
+
+### develop engineering of laser-plasma accelerating structure 
+
+**Characteristics length** of a plasma target for LPI ( `\(10^{18} \leq n_e \leq 10^{19}\,\)` cm `\(^{-3}\)` ) :
+
+- Rayleigh length of the laser  &amp;emsp; `\(\,\rightarrow\,\)` &amp;emsp; `\(Z_r=\pi w_0^2/\lambda_0 \sim 1.3\,\)`mm
+- Plasma wavelength &amp;emsp; &amp;emsp; &amp;emsp; &amp;emsp; `\(\rightarrow\)` &amp;emsp; `\(\lambda_p \approx 10-30\,\mu m\)` 
+- Betatron wavelength  &amp;emsp; &amp;emsp; &amp;emsp; `\(\,\,\,\,\rightarrow\)` &amp;emsp; `\(\lambda_\beta =\sqrt{2\gamma_e}\lambda_p \sim 250-800\,\mu m\)` 
+
+**Tailoring plasma density profile**: 
+
+- **.qblue[to control injection]** : density down-ramp assisted truncated ionization injection &lt;sup&gt;1&lt;/sup&gt; &lt;br&gt;
+`\(\Rightarrow\)` narrowing of the injection length &lt;sup&gt;2&lt;/sup&gt;
+- **.blue[tune]** the injected **.qblue[charge / beam loading]** &lt;sup&gt;3&lt;/sup&gt;
+- **tune** e- **.qblue[beam energy]** / acceleration length
+- **limit .qblue[emittance growth]** at the exit of the plasma / minimized Twiss parameters  &lt;br&gt; `\(\Rightarrow\)`
+Control of the exit down ramp is crucial ! &lt;sup&gt;4&lt;/sup&gt; 
+
+.center[ .red[**... in only few mm**]  ]
+
+.footnote[
+[1] [M. Zeng, et al., Physics of Plasmas, **21**, 3, p. 030701,(2014)](https://doi.org/10.1063/1.4868404).
+
+
+[2] [J. P. Couperus, et al., , Nat Commun, **8**,1, p. 487,(2017)](https://doi.org/10.1038/s41467-017-00592-7), [3] [P. Lee, et al., Phys. Rev. Accel. Beams, **21**,5, 052802, (2018)](https://doi.org/10.1103/PhysRevAccelBeams.21.052802).
+
+[4] [M. Migliorati, et al., Phys. Rev. ST Accel. Beams, **16**,1, p. 011302, (2013)](https://doi.org/10.1103/PhysRevSTAB.16.011302); [X. Li,et al.,Phys. Rev. Accel. Beams, **22**, 2, p. 021304, (2019)](https://doi.org/10.1103/PhysRevAccelBeams.22.021304).
+
+
+
+]
+
+---
+name: plasmadensity
+
+# Plasma density profile : an illustration
+
+.left-code[
+Example of simulation:  
+* LASERIX laser input
+* generic shape for .qblue[n&lt;sub&gt;e&lt;/sub&gt;(x)] inspired from various ref&lt;sup&gt;1&lt;/sup&gt;
+* parameter : .black[x&lt;sub&gt;foc,vac&lt;/sub&gt;]
+
+
+
+mMulti-cell to get access to each region tuning : 
+
+  * length and density  
+  * dopant C&lt;sub&gt;N&lt;sub&gt;2&lt;/sub&gt;&lt;/sub&gt;(x) 
+  
+  
+.black[Open ways to:
+* Fine optimization 
+* Control
+* Tolerancing
+]
+
+]
+.right-plot[
+
+&lt;img src="img/fig-cs2.svg" width="98%" /&gt;
+]
+
+.footnote[
+[1] [G. Golovin et al., Phys. Rev. ST Accel. Beams,**18**,1,011301,(2015)](https://doi.org/ 10.1103/PhysRevSTAB.18.011301); [M. Mirzaie et al., Sci Rep,**5**,1,14659,(2015)](https://doi.org/10.1038/srep14659).
+; [A. Irman et al., Plasma Phys. Control. Fusion, **60**, 4,044015,(2018)](https://doi.org/10.1088/1361-6587/aaaef1), [P. Lee, et al., Phys. Rev. Accel. Beams, **21**,5, 052802, (2018)](https://doi.org/10.1103/PhysRevAccelBeams.21.052802).
+
+
+
+]
+
+---
+name: LPIsimulation
+
+# Optimization of the LPI core 
+
+.pull-left[
+.blue[**Input**] 
+* **laser parameters** in vacuum (a&lt;sub&gt;0&lt;/sub&gt;,t&lt;sub&gt;0&lt;/sub&gt;,w&lt;sub&gt;0&lt;/sub&gt;,x&lt;sub&gt;0&lt;/sub&gt;) &lt;sup&gt;1&lt;/sup&gt;
+* .qblue[**plasma target**]:  continuous laminar flow gas cell &lt;br&gt;
+`\(\Rightarrow\)` `\(n_e(x)\)`  `\(\propto\)` cell geometry + `\(Q_i\)` gas flow
+
+.blue[**Tools:**] 
+
+* **Fast PIC** simulations
+  - Azimuthal modes geometry
+  - envelope approximation for the laser.  
+* **Laminar conductance rough model** for cell geometry as CAD input
+* **CFD** [Openfoam](https://www.openfoam.com/) / [snappyHexmesh](https://www.openfoam.com/documentation/guides/latest/doc/guide-meshing-snappyhexmesh.html)  couple to CAD 
+* Tracking particle code coupling [ASTRA](https://www.desy.de/~mpyflo/)/CODAL
+]
+.pull-right[
+
+&lt;img src="img/lpi-optimization.svg" width="180%" /&gt;
+
+]
+
+&lt;br&gt;
+.center[.orange[all the ingredient for a **full numerical optimization** of the plasma cell ...]]
+
+.footnote[
+[1] in phase 1 : limited to `\(a_0=1.15\pm0.8\)` and `\(\tau_L = 40\pm3\)` fs (FWHM) 
+
+]
+
+---
+name: plasmacell
+
+#Plasma cell test bench
+
+.pull-left[
+Dedicated test bench for plasma cell: 
+-  **fs intense laser driver **   `\(I \sim 1\times 10^{16}\, W.cm^{-2}\)` for plasma channel generation
+- **synchronized probe beam** for time resolved transverse interferometry 
+- high resolution **plasma density diagnostic** &lt;sup&gt;1&lt;/sup&gt; `\(\delta n_e  &lt; 3 \times 10^{17} cm^{-3}\)`
+- spectral imaging for **dopant spatial distribution control** &lt;sup&gt;2&lt;/sup&gt;
+- multiple **mass-flow controlled gas injection**
+- continuous flow target operation with **two stages differential pumping**
+
+]
+
+.pull-right[
+
+&lt;img src="img/plasmacell_testbench.jpg" width="100%" /&gt;
+
+]
+
+
+
+.footnote[
+[1] [F. Brandi and L. A. Gizzi, High Pow Laser Sci Eng, vol. 7, p. e26, 2019](https://www.cambridge.org/core/product/identifier/S2095471919000112/type/journal_article); Phasics, ‘SID4 High resolution wavefront sensor, http://phasicscorp.com/cameras/sid4/ (2020).
+
+[2] [B. B. Pollock et al., Phys. Rev. Lett., vol. 107, no. 4, p. 045001, Jul. 2011](https://doi.org/10.1103/PhysRevLett.107.045001).
+
+[3] [K. Wang, PhD, 2019](https://www.theses.fr/2019SACLS179) in ESCULAP project N. Delerue, [E. Baynard et al, NIMA, vol. 909, p.46, 2018](https://doi.org/10.1016/j.nima.2018.03.013).
+
+]
+
+---
+
+# Plasma cell test bench 
+
+.center[
+&lt;img src="img/testbench-optic-mek-v3.svg" width="50%" /&gt;
+]
+
+
+---
+name: plasmatargetry3
+
+# Plasma target developpement 
+
+.pull-left[
+### prototype requirements 
+
+* divide in region / process 
+  *  localized dopant 
+  * tune independently pressure
+* customizable parts (nozzle in, central body , nozzle out) + removable wear parts
+* stable density profile ( `\(\delta n_e &lt; 1\)` % ) =&gt; continuous flow 
+* integrated in the beamline...and compact (*10x6x15* cm&lt;sup&gt;3&lt;/sup&gt;)
+* transverse optical access for plasma diags
+
+* ...scalability to  high average power operation
+]
+.pull-right[
+&lt;img src="img/plasma_channel.jpg" width="100%" /&gt;
+]
+
+---
+name: plasmatargetry4
+
+# Plasma target : beamline integration 
+
+* Various configurations exists for plasma target integration : 
+
+&lt;img src="img/plasmatarget_type_1bc.png" width="100%" /&gt;
+
+
+---
+name: plasmatargetry4
+
+# Plasma target : beamline integration update
+
+* Local evacuation for high pressure operation light gas operation [Jerome Faure slides IFAST 2022]() and Jens Osterhoff group Bolen _et al._ PRAB 2022 [10.1103/PhysRevAccelBeams.25.031301](https://doi.org/10.1103/PhysRevAccelBeams.25.031301)   : 
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+.pull-left[
+&lt;img src="img/faure-diffpump.png" width="100%" /&gt;
+]
+
+.pull-right[
+&lt;img src="img/bolen-diffpump.png" width="100%" /&gt;
+]
+
+---
+name: plasmatargetry5
+
+# Plasma target  : gas flow
+
+.pull-left[
+* In continuous flow, flow rate are typically :  `\(5 &lt; q_{1,2};q_{6,8} &lt; 15\)` mbar.l/s
+`$$q_i = C_i \times \Delta P$$`
+* Flow rates depend on cell aperture : `\(300 &lt; d &lt; 800\)` um
+`$$C_i = f(d_i^n);\quad n\sim 4$$`
+]
+
+.pull-right[
+&lt;img src="img/plasmacell-1.png" width="100%" /&gt;
+]
+
+
+ ### =&gt; real conductance are difficult to estimate, fluid simulation are mandatory. 
+
+
+---
+name: plasmatargetrygasflow
+
+# Plasma target  : gas flow
+
+CFD simulation with openfoam [https://www.openfoam.com/](https://www.openfoam.com/), PhD Pierre Drobniak
+
+&lt;img src="img/CFD.png" width="100%" /&gt;
+
+=&gt; test of fluid model under validation with experimental data for optimization of outramp [cf. Phi Nghiem talk]
+
+Gas distribution in the beamline with Molflow+ [https://molflow.web.cern.ch/](https://molflow.web.cern.ch/)
+
+---
+name: plasmatargetry5
+
+# Plasma target  : gas flow and vacuum
+
+* In continuous flow, flow rate are typically :  `\(5 &lt; q_{ij} &lt; 15\)` mbar.l/s
+* Flow rates depend on cell aperture : `\(300 &lt; d_{ij} &lt; 800\)` um
+* Match pump pumping speed to pressure stages : 
+
+.center[
+&lt;img src="img/pumping-speed.png" width="60%" /&gt;
+]
+
+
+---
+name: plasmatargetry6
+
+# Plasma target  : gas flow and vacuum
+
+* First difficulties with the prototype V1 gas confinement in the nozzle, 3-4 mbar plateau in the inner nozzle for 120 mbar pressure in the cell. 
+* Common issue with the conductance increase with input aperture 
+
+
+.center[
+&lt;img src="img/autofoc.jpg" width="30%" /&gt;
+]
+
+* Prototype V1 and new version prototype V2 with better gas evacuation,  PhD Pierre Drobniak
+
+.pull-left[
+&lt;img src="img/protocellV2.png" width="60%" /&gt;
+]
+
+.pull-right[
+&lt;img src="img/protocellV3.png" width="60%" /&gt;
+
+]
+
+---
+name:plasmatargetryconfinement
+
+# Ionization injection dopant confinement 
+
+* Confine dopant (N2) in one region for low background electron beam 
+
+* [**PRELIMINARY**] results from spectrally resolved imaging region 1 N2(p_1) He(p_2=20mbar), prototype V1s
+
+.center[
+&lt;img src="img/confinement.png" width="100%" /&gt;
+]
+
+### =&gt; successful confinement for pressure equalization 
+
+PhD Pierre Drobniak, MsD Gualadio Kane
+
+
+---
+name:plasmatargetrydensity
+
+# Example of e- density measurement 
+
+* Example of characterization low pressure He (P=5mbar) 
+
+.center[
+&lt;img src="img/density.png" width="100%" /&gt;
+]
+
+### tested of electron density diagnostic based wavefront sensor measurement [1]
+
+PhD Pierre Drobniak, MsD Gualadio Kane
+
+.footnote[
+[1] Plateau et al.  RSI 2010
+]
+
+---
+class: middle,center,inverse
+
+
+
+
+# Electron beam control and transport
+
+
+---
+name:eCBL2
+
+# Electron beam line : characterization to control 
+
+
+.center[
+&lt;img src="img/lpi-ecbl1.png" width="70%" /&gt;
+]
+
+.pull-left[
+### *e-* beam characterization
+**Design**: start from PIC simulation parameters &lt;br&gt; **+** explore different capture/focusing scenarii &lt;br&gt;
+**Beamline**: magnets with remote alignment &lt;br&gt;
+**+** correctors and BPM &lt;br&gt;
+**Diags**:  robust diagnostics: Yag screen, faraday cups&lt;br&gt;
+**+** wide angular acceptance spectrometer &lt;br&gt; **+**
+emittance measurement 
+
+]
+
+.pull-right[
+### beam/laser/plasma correlations
+
+* **single shot** characterized **diags** / SNR 
+* **online control** laser/plasma/magnets
+* machine learning correction 
+]
+
+.center[.orange[**+** **additional diagnostic** prevously tested on our photo-injector PHIL for beam duration and **longitudinal phase-space** measurement]]
+
+
+---
+# Electron characterisation line status
+
+Input from SMILEI simulation, analytical home made code and CODAL code 
+
+Try to use electromagnet 10cm long 50T/m for flexibility of the characterisation line
+
+* distance to the first quadrupole : 12cm
+* laser removal 100cm from sources 50cm reserved space.
+* no diags before laser removal
+* up to 5000cm before entrance of direct beam dump
+* spectrometer possible position from 200cm - 300cm 
+
+.center[
+&lt;img src="img/ebeamline.png" width="70%" /&gt;
+]
+
+PhD C. Guyot and C. Bruni  
+
+
+---
+name:ecbl
+
+# Focusing
+* For a case with `\(\sigma_{div,i} \approx 6\)` mrad the transverse size is 3.5 mm at the 3rd q quadrupole. 
+* Constraint on inner bore radius for the 3rd quad due to laser divergence. 
+
+.pull-left[
+&lt;img src="img/ecbl-energycharge.png" width="90%" /&gt;
+]
+
+.pull-right[
+&lt;img src="img/ecbl-focusing.png" width="90%" /&gt;
+]
+
+PhD C. Guyot and C. Bruni  
+
+---
+
+# Emittance
+
+* nominal transport with a normalized emittance of `\(\approx 1\)`mm.mrad
+* even for large energy spread `\(\approx \pm 2.5\)` % normalized emittance is controlled. 
+
+.center[
+&lt;img src="img/ecbl-emittance.png" width="50%" /&gt;
+]
+
+PhD C. Guyot and C. Bruni  
+
+---
+
+# Emittance vs divergence
+
+For higher divergence the emittance blow up in the first quads compromising the performance, however the focusing enable to work with large divergence range for optimization phase of the LPI.  
+
+
+.center[
+&lt;img src="img/ecbl-divergence.png" width="50%" /&gt;
+]
+
+
+PhD C. Guyot and C. Bruni  
+
+---
+# Conclusion : Development plan 
+
+
+.panelset[
+.panel[.panel-name[phase 1]
+
+### 2021-2023:  base of the LPI facility 
+
+* **infrastructure upgrade** : renovation, network, PHIL reconfiguration 
+
+* **laser driver commissioning** :  .blue[laser transport, compression, injection and focalisation]
+
+* **control command development** : .blue[ tango laser gateway +  tango system / DS and GUI for laser transport and injection control + time stamping and automated storage ] 
+
+ .center[.red[** =&gt; laser driver optimized **]]
+ 
+* **optimization of plasma injector design / target development **:  PIC simulations optimization studies for injection control and emittance;  target prototyping and testing; plasma module 
+
+ .center[.red[** =&gt; target prototype**]]
+
+* **e- characterization beam line**: .blue[ simple characterization beamline : charge,energy,divergence,emittance dE/E ]
+
+
+
+ .center[.red[** =&gt; first e- beam parameters optimization run at 10Hz.** ]]
+
+]
+
+.panel[.panel-name[phase 2]
+
+### 2023-2024: laser driver and electron beamline upgrade 
+
+* **laser driver upgrade** on target: `\(\tau_l= 40 \rightarrow 30\)` fs, `\(E_{L,t} = 1.3 \rightarrow 2.5\)` J 
+  - same amplifier larger Ti:Sa crystal,  one more pump laser&lt;br&gt;
+  - ultra broadband Dazzler for high order spectral phase correction 
+
+* **upgrade of electron beamline** : on the base of phase 1 measurements : BPM, focusing section and correctors. 
+  
+* **beam quality &amp; control optimization studies** `\(\Rightarrow\)` correlation [laser,plasma,electron] `\(\Rightarrow\)` feedback development 
+
+* longitudinal phase space diagnostic development 
+
+* .qblue[electron transport technical design studies] 
+
+.center[.orange[**phase 2 e- beam parameter optimized at 10Hz.**]]
+
+]
+
+.panel[.panel-name[phase 3]
+
+### 2024-2026: e- beam transport 
+
+
+* installation of the complete electron beam transport line (for staging or application delivery, focused beam)
+
+* installation of the end diagnostic station 
+
+* commissioning and optimization of the **full LPI**
+
+* .qblue[design study for a second laser-plasma accelerating stage]
+
+.center[.orange[**phase 3 LPI operating at 10Hz, beam longitudinal phase space manipulation**]]
+
+]
+]
+
+
+
+
+
+
+
+---
+class: middle center
+
+
+# Thanks !  
+
+&lt;br&gt;
+&lt;br&gt;
+
+[Contact : &lt;img style="vertical-align:middle" src="img/icon_mail.svg" height="32px"/&gt;](mailto:cassou@lal.in2p3.fr)
+
+.footnote[
+Ce document est la propriété d’IJCLab et ne peut être ni reproduit ni diffusé sans autorisation du laboratoire.
+This document is written by the IJCLab. It is an IJCLab property and cannot be reproduced or communicated without this authorization.
+
+]
+
+
+
+  
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "googlecode",
+"highlightLines": true,
+"highlightLanguage": "r",
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+<!--Hat-tip: https://www.garrickadenbuie.com/blog/xaringan-tip-logo-all-slides/-->
+<style>
+.logo {
+  background-image: url(img/logo-pallas-2.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  width: 70px;
+  height: 70px;
+  z-index: 0;
+}
+</style>
+
+<script>
+document
+  .querySelectorAll(
+    '.remark-slide-content' +
+    ':not(.title-slide)' +
+    // add additional classes to exclude here, e.g.
+    ':not(.inverse)' +
+    ':not(.hide-logo)'
+  )
+  .forEach(el => {
+    el.innerHTML += '<div class="logo"></div>';
+  });
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
