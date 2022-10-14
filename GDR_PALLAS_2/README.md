@@ -2,7 +2,7 @@
 
 PALLAS project : Prototyping accelerator based on laser-plasma technologies.
 
-last version of the slides [here](https://kevincassou.github.io/slides/CS-IN2P3/slides/PALLAS-AGGDR-2022.html)
+last version of the slides [here](https://kevincassou.github.io/slides/GDR_PALLAS_2/slides/PALLAS-AGGDR-2022.html)
 
 
 
