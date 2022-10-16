@@ -1,8 +1,8 @@
-## Slides for EuroNNAC22 session S-ST4 on PALLAS project development status 
+## Slides for IJClab CSS dedicated to Accelerator Roadmap
 
 PALLAS project : Prototyping accelerator based on laser-plasma technologies.
 
-last version of the slides [here](https://kevincassou.github.io/slides/EuroNNAC22)
+last version of the slides [here](https://kevincassou.github.io/slides/CSS_IJClab_2022/)
 
 
 

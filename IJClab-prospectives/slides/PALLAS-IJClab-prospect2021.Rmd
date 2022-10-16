@@ -141,8 +141,10 @@ High energy physics and photon sciences require
 - see C. Schroeder LPA overview for HEP at the [Town Hall Meeting for High gradient acceleration](https://indico.cern.ch/event/1017117/contributions/4290155/attachments/2218413/3756166/2021mar30_Townhall_Schroeder-LWFA.pdf) (2021/03/30)
 ]
 
+look to [https://indico.cern.ch/event/1017117/](https://indico.cern.ch/event/1017117/)
 <br>
-.center[ .qblue[  **laser-driven approach at IN2P3/IJCab** ]]
+<br>
+.center[ .blue[  **laser-driven approach at IN2P3/IJCab** ]]
 
 
 
@@ -217,9 +219,9 @@ knitr::include_graphics("img/lpi.png")
 2. development of .blue[**plasma targetry**] => plasma cell
 3. electron .dgrey[**beam control and transport**]
 
-**continuous 10 Hz** operation to enable machine studies
+.qblue[**continuous 10 Hz**] operation to enable machine studies
 
-**openData** : 
+.orange[**openData**]: 
 - push for reproducibility simulations and exp./ 
 - encourage common definition of standards 
 ]
@@ -267,9 +269,9 @@ knitr::include_graphics("img/lpi.png")
 
 ### 2020-2022:  base of the LPI facility 
 
-* **infrastructure upgrade** : renovation, network, PHIL reconfiguration 
+* **infrastructure upgrade** : renovation, network, NEPAL reconfiguration 
 
-* **laser driver commissioning** :  .blue[laser transport, compression, injection and focalisation]
+* **laser driver commissioning** :  .blue[laser transport from LASERIX, compression, injection and focalisation]
 
 * **control command development** : .blue[ tango laser gateway +  tango system / DS and GUI for laser transport and injection control + time stamping and automated storage ] 
 
@@ -289,7 +291,7 @@ knitr::include_graphics("img/lpi.png")
 
 .panel[.panel-name[phase 2]
 
-### 2023-2024: laser driver and electron beamline upgrade 
+### 2023-2024: LASERIX laser driver and electron beamline upgrade 
 
 * **laser driver upgrade** on target: $\tau_l= 40 \rightarrow 30$ fs, $E_{L,t} = 1.3 \rightarrow 2.5$ J 
   - same amplifier larger Ti:Sa crystal,  one more pump laser<br>

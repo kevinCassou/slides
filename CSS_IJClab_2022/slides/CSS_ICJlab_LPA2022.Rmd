@@ -1001,6 +1001,15 @@ knitr::include_graphics("img/lbas_ppe.svg")
 ]
 
 ---
+name: nearterm
+
+#LPA nearterm Applications
+
+```{r echo=FALSE, out.width="75%"}
+knitr::include_graphics("img/lpa-nearterm-apps.png")
+```
+
+---
 name:swot
 
 # PALLAS SWOT 
