@@ -10,7 +10,7 @@
 
 * [PALLAS project status]() at [AG GDR APPEL]() 2022/05/11
 * [PALLAS project status]() at [EuroNNAC22]() 2022/09/20
-* [High gradient activities @ IJClab: laser-driven plasma accelerator]() for the CSS 2022/10/19
+* [High gradient activities @ IJClab: laser-driven plasma accelerator](https://kevincassou.github.io/slides/CSS_IJClab_2022/slides/CSS_ICJlab_LPA2022.html#1) for the CSS 2022/10/19
 
 
 Slides made with the [nsh-r](https://spcanelon.github.io/xaringan-basics-and-beyond/index.html) model and [xaringan](https://bookdown.org/yihui/rmarkdown/xaringan.html) packages.  
