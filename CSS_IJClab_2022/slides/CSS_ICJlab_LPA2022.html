@@ -205,9 +205,9 @@ Example of long operation (&gt;20 h) of laser-plasma accelerator at 1Hz,10Hz (DE
 
 
 ---
-# plasma accelerator French landscape: laser-driven ! 
+# Plasma accelerator French landscape: laser-driven ! 
 
-a view in a few bullets : 
+A view in a few bullets: 
 
 * Is laser centered (some beam driven activities at LOA with SLAC) 
 
@@ -242,18 +242,17 @@ And a few years later
 # LPA French CNRS landscape
 
 ### Dedicated facilities : 
-* [**LAPLACE**]() : Laser Plasma Acceleration Center aiming to develop the following axis
+* [**LAPLACE**]() &lt;img style="vertical-align:middle" src="img/logo-loa.png" height="32px"/&gt;: Laser Plasma Acceleration Center aiming to develop the following axis
   - High repetiton LPA sources for X generation application: 100 Hz, 100 MeV
   - High energy LPA sources &gt;1 GeV single stage&lt;sup&gt;1&lt;/sup&gt;, 1Hz and applications
 Radiography and irradiation applications
-* .blue[**PALLAS**: Prototype accelerator plasma based technology ; laser plasma injector (LPI) test facility (150-250 MeV, 10-100pC, 10Hz) aiming to bring LPI stability and control comparable to RF accelerator.]
+* .blue[**PALLAS** &lt;img style="vertical-align:middle" src="img/logo-ijclab.png" height="22px"/&gt;: Prototype accelerator plasma based technology ; laser plasma injector (LPI) test facility (150-250 MeV, 10-100pC, 10Hz) aiming to bring LPI stability and control comparable to RF accelerator.]
 
 ### HPC resources 
 
 * **VIRTUALAPLACE** gathering all CNRS and CEA labs involved in plasma acceleration in France for access to [GENCI]() HPC national resources ~ 10M h.cpu (A. Beck, LLR)
 
-[National facility **APOLLON**]() : Multi-PW laser facility for exploratory experiments on laser-matter interaction in ultra-high intensity regime. Call based user access for 2 target area short focal length / long focal length
-electron acceleration experiments in LPA. 
+[National facility **APOLLON**]() : Multi-PW laser facility for exploratory experiments on laser-matter interaction in ultra-high intensity regime. Call based user access for 2 target area short /long focal length for LPA experiments. 
 
 .small[[1] Oubrerie, K. et al. Controlled acceleration of GeV electron beams in an all-optical plasma waveguide. Light Sci Appl 11, 180 (2022).
 ]
@@ -292,7 +291,7 @@ name: pallas-objectives
 # PALLAS in a nutshell
 
 
-.pull-left[
+.pull-left.w60[
 
 Build a .qblue[**laser-plasma accelerator test facility**] aiming to achieve **reliability** and **control** comparable to conventional **RF accelerator** standards.
 
@@ -311,7 +310,7 @@ Path to prototype injector for staging to GeV energy
 
 ]
 
-.pull-right[
+.pull-right.w40[
 &lt;img src="img/lpi.png" width="100%" /&gt;
 .small[
 | Parameters | phase 1 | phase 2 | phase 3 | unit | 
@@ -324,11 +323,12 @@ Path to prototype injector for staging to GeV energy
 | stability | 5% | **3%** | **&lt;1%** | -  |
 | reproductibility | 5% | **3%** | &lt;3% | - | 
 ]
-]
-
 .small[
 [1] [Amplitude Laser](), [Imagine Optics]()
 ]
+]
+
+
 
 ---
 name:pallas
@@ -433,7 +433,7 @@ SWOT analysis see : [back slide](#swot)
 .center[
 &lt;img src="img/PALLAS-LASERIX.png" width="95%" /&gt;
 ]
-
+.small[courtesy G. Iaquanello]
 ---
 # PALLAS beamline overview
 .center[
@@ -487,7 +487,7 @@ name: plasmatargetry3
 
 # Plasma target : beamline integration 
 
-* Various configurations exists for plasma target gas-cell type integration : 
+* Various integration configurations exist for plasma target gas-cell type: 
 
 &lt;img src="img/plasmatarget_type_1bc.png" width="100%" /&gt;
 
@@ -541,27 +541,33 @@ name: plasmacellstatus
 
 .pull-left.w30[
 
-- fast PIC simulation 
-- building dataset
+- Fast-PIC simulations 
+- Building dataset
 - Bayesian optimum search
-- tolerance studies
+- Tolerance studies
 ]
-.pull-right.w70[ 
+.pull-right.w70[
+.right[
 &lt;img src="img/rds23-projections.svg" width="90%" /&gt;
-]
+]]
 .pull-left.w30[
-- validated CFD model
-- geometrical shaping for density outramp 
+- Validated CFD model
+- Geometrical shaping for density outramp 
 ]
 .pull-right.w70[
-graph CFD 
-]
+.right[
+&lt;img src="img/CFD_simulations.png" width="60%" /&gt;
+]]
 .pull-left.w30[
-- prototype progress 
+- Prototype developments 
+
+&lt;br&gt;
+**Pierre Drobniak, PhD**
 ]
 .pull-right.w70[
-&lt;img src="img/target_proto.png" width="80%" /&gt;
-]
+.right[
+&lt;img src="img/target_proto.png" width="60%" /&gt;
+]]
 
 
 ---
@@ -605,7 +611,7 @@ name: laserdriver
 
 # PALLAS Laser Driver
 
-Update control for the stabilization of 40TW 10Hz LASERIX laser system @ IJClab, collaboration with [Amplitude Laser]()
+Update control for the stabilization of 40TW 10Hz LASERIX laser system @ IJClab, collaboration with [Amplitude Laser](https://amplitude-laser.com/)
 
 
 &lt;img src="img/pallas-ld-scheme.png" width="100%" /&gt;
@@ -619,7 +625,7 @@ Update control for the stabilization of 40TW 10Hz LASERIX laser system @ IJClab,
 &lt;img src="img/HS-mirror-sic.png" width="95%" /&gt;
 
 - Test on piezo tip-tilt for optimal bandwidth [~400Hz] validated [1]
-- On going qualification test of femtosecond broadband coating on SiC: IBS stress compensation and LIDT under vacuum [2]
+- On going qualification test of femtosecond broadband coating on SiC: IBS stress compensation and LIDT under vacuum [2] `\(\Rightarrow\)` challenge to combine high LIDT and control stress without back face compensation
 
 .small[
 [1]: MRC gmbh &lt;br&gt; [2]: MERSEN/OPTOMAN/LIDARIS  
@@ -633,19 +639,18 @@ Update control for the stabilization of 40TW 10Hz LASERIX laser system @ IJClab,
 ---
 # Conclusions
 
-* **PALLAS** project is building  a **10Hz laser-plasma accelerator test facility** with an exciting program for the next 5 years on high quality laser plasma injector recognized as on of the key milestones in the accelerator roadmap [1]. 
+* **PALLAS** project is building  a **10Hz laser-plasma accelerator test facility** with an exciting program for the next 5 years on high quality laser plasma injector recognized as one of the key milestones in the accelerator roadmap [1]. 
 
 * **PALLAS** is complementary to existing facilities (LOA, LUX, FLAME-LNF) or/and an intermediate step for starting project ([LAPLACE](https://www.ensta-paris.fr/en/node/906), [KALDERA](http://mls.desy.de/kaldera))
 
-* **Push back the laser-plasma technology frontiers** to high reliability and control `\(\rightarrow\)` will open ne insight for beam shape and phase sapce conto
+* **Push back the laser-plasma technology frontiers** to high reliability and control `\(\rightarrow\)` will open new insight for beam shape and phase space control
 
 * Very active team on the project which is *a newcomer* in the field is building a machine in less than 4 years
   - First results are coming [2]
   - Team is growing collaborations in discussion: CEA-IRFU, LOA, LNF-INFN
-  - Reinforcing industry collaborations: Amplitude laser 
+  - Reinforcing collaborations with industry is mandatory for laser driver: Amplitude laser 
   - Still on road for being able to produce first electron by end of 2023...depending procurement delay hazard. 
 
-&lt;br&gt;
 .small[
 [1] Mounet, N.,*European Strategy for Particle Physics Accelerator R&amp;D Roadmap.* CERN. (2022) - [http://arxiv.org/abs/2201.07895](http://arxiv.org/abs/2201.07895)
 [2] P. Drobniak *et al.*,*Fast Particle-in-Cell optimization scans of laser-plasma injector*, *Laser-plasma inline two-chamber gas cell target for localized ionization injection*,in preparation (2022)
@@ -700,6 +705,12 @@ Configuration of the LPI : laser driver (40-50 TW), plasma, ...
 
 ]
 
+---
+name:eCBL
+# Versatile beamline for LPA characterization 
+.center[
+&lt;img src="img/eCBL.png" width="80%" /&gt;
+]
 
 ---
 name: plasmatargetry1
@@ -910,16 +921,34 @@ name: nearterm
 
 #LPA nearterm Applications
 
-.pull-left.w50[
+.pull-left.w40[
 - Synergy with EuPRAXIA for FEL, important progress in the demonstration. 
-- table extract from AF-6 snowmass report
+- table extracted from AF-6 snowmass report&lt;sup&gt;1&lt;/sup&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+.small[
+[1]. Geddes, C., Hogan, M., Musumeci, P. &amp; Assmann, R. Report of Snowmass 21 Accelerator Frontier Topical Group 6 on Advanced Accelerators. Preprint at http://arxiv.org/abs/2208.13279 (2022).
 
 ]
-.pull-right.w50[.center[
+
+]
+.pull-right.w60[.center[
 &lt;img src="img/lpa-nearterm-apps.png" width="100%" /&gt;
 ]]
 
+---
+name:LPA-kaldera
 
+# Dive into laser-plasma acceleration
+.center[
+&lt;img src="img/lpa-demo-kaldera.png" width="90%" /&gt;
+]
+
+ 
+.center[Watch it:  [http://kaldera.desy.de](http://kaldera.desy.de)]
+
+.small[plasma acceleration group *et al.* DESY]
 
 ---
 name:swot
@@ -927,6 +956,13 @@ name:swot
 # PALLAS SWOT 
 
 &lt;img src="img/pallas_swot_202210.png" width="100%" /&gt;
+
+
+---
+name:TWAC
+background-image: url(img/TWAC.png)
+background-size: contain
+class:middle, center
 
 ---
 # Future
