@@ -357,7 +357,7 @@ knitr::include_graphics("img/lpi.png")
 | energy  | 150  | **200** | 200 | MeV |
 | charge  | 15-30 | **30** | **>30** | pC |
 | frep | 10 | 10 | 10 | Hz |
-| energy spread | <5% | **< 3% ** | < 2% | peak (FWHM) |
+| energy spread | <5% | **< 3% ** | < 2% | rms |
 | $\varepsilon_{n,rms}$  | 1 | **<1** | **<1** | $\mu m$|
 | stability | 5% | **3%** | **<1%** | -  |
 | reproductibility | 5% | **3%** | <3% | - | 
@@ -405,7 +405,7 @@ knitr::include_graphics("img/lpi.png")
 | energy  | 150  | **200** | 200 | MeV |
 | charge  | 15-30 | **30** | **>30** | pC |
 | frep | 10 | 10 | 10 | Hz |
-| energy spread | <5% | **< 3% ** | < 2% | peak (FWHM) |
+| energy spread | <5% | **< 3% ** | < 2% | rms |
 | $\varepsilon_{n,rms}$  | 1 | **<1** | **<1** | $\mu m$|
 | stability | 5% | **3%** | **<1%** | -  |
 | reproductibility | 5% | **3%** | <3% | - | 
@@ -708,7 +708,7 @@ knitr::include_graphics("img/accelerator_roadmap-HH2022-kJacobs-p22.png")
 ---
 # Conclusions
 
-* **PALLAS** project is building  a **10Hz laser-plasma accelerator test facility** with an exciting program for the next 5 years on high quality laser plasma injector recognized as one of the key milestones in the accelerator roadmap [1]. 
+* **PALLAS** project is building  a **10Hz laser-plasma accelerator test facility** with an exciting program for the next 5 years on high quality e- injector recognized as one of the key milestones in the accelerator roadmap [1]. 
 
 * **PALLAS** is complementary to existing facilities (LOA, LUX, FLAME-LNF) or/and an intermediate step for starting project ([LAPLACE](https://www.ensta-paris.fr/en/node/906), [KALDERA](http://mls.desy.de/kaldera))
 
@@ -717,7 +717,7 @@ knitr::include_graphics("img/accelerator_roadmap-HH2022-kJacobs-p22.png")
 * Very active team on the project which is *a newcomer* in the field is building a machine in less than 4 years
   - First results are coming [2]
   - Team is growing collaborations in discussion: CEA-IRFU, LOA, LNF-INFN
-  - Reinforcing collaborations with industry is mandatory for laser driver: Amplitude laser 
+  - Reinforcing collaborations with industry is mandatory for laser driver: Amplitude laser, Image optics, local micro machinining ceramic company, ...
   - Still on road for being able to produce first electron by end of 2023...depending procurement delay hazard. 
 
 .small[
