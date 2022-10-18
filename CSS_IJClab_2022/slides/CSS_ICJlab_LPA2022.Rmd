@@ -96,27 +96,13 @@ class: title-slide, left, bottom
 ### `r rmarkdown::metadata$author`
 ### `r rmarkdown::metadata$date`
 
----
-class: center, middle
-
-# DRAFT VERSION 
-
-being updated 
-
-last version available [here](https://kevincassou.github.io/slides/CSS_IJClab_2022/slides/CSS_ICJlab_LPA2022.html#1)
-
-.footnote[
-Ce document est la propriété d’IJCLab et ne peut être ni reproduit ni diffusé sans autorisation du laboratoire.
-This document is written by the IJCLab. It is an IJCLab property and cannot be reproduced or communicated without this authorization.
-
-]
 
 ---
 class: center, middle
 
 ## on behalf ot the team 
 
-E. Baynard, A. Beck, C. Bruni, K. Cassou, J.L. Coacolo, J. Demailly, D. Douillet, P. Drobniak, P. Gauron, A. Gonnin, C. Guyot, E. Jules, G. Iaquanello, G. Kane, S. Kazamias, V. Kubytsky, E. Legay, B. Lucas, Y. Peinaud, F. Massimo, O. Neveu, M. Pittman, A. Specka
+E. Baynard, A. Beck, C. Bruni, K. Cassou, J.L. Coacolo, J. Demailly, D. Douillet, P. Drobniak, P. Gauron, A. Gonnin, C. Guyot, E. Jules, G. Iaquaniello, G. Kane, S. Kazamias, V. Kubytsky, E. Legay, B. Lucas, Y. Peinaud, K. Malkinski, F. Massimo, D. Minenna, P. Nghiem, M. Pittman, O. Neveu, A. Specka
 
 
 ### inspired by fruitful discussion in the HGPL panel <br> and snowmass 21 AF-6 reports
@@ -198,6 +184,34 @@ class: inverse, middle center
 
 `r fontawesome::fa("comment-dots")`
 
+---
+
+# Start at the source  <img style="vertical-align:middle" src="img/AccRoadmapLDG.png" height="96px"/>  <img style="vertical-align:middle" src="img/logo-eupraxia.png" height="68px"/>
+
+
+
+.pull-left[
+
+**Significant step in technology development **
+* Addressing mid term challenge in high quality laser driven 
+e- beam source 
+* Synergy with compact light source development [EuPRAXIA](http://www.eupraxia-project.eu/)  
+
+**Feed integrated design studies**
+* refine **performance limits** in key-element towards collider requirement  (drivers / targetry etc ...) 
+* hands-on **training** of **future generation** of accelerator engineer/physicist
+
+]
+
+
+.pull-right[
+```{r echo=FALSE, out.width="100%"}
+knitr::include_graphics("img/accelerator_HGPLA_pillars.png")
+``` 
+]
+
+.small[[Mounet, N. European Strategy for Particle Physics Accelerator R&D Roadmap. 270 (2022).](http://arxiv.org/abs/2201.07895); [Assmann, R. W. et al. EuPRAXIA Conceptual Design Report. Eur. Phys. J. Spec. Top. 229, 3675–4284 (2020)](http://link.springer.com/10.1140/epjst/e2020-000127-8).
+]
 
 ---
 # `r fontawesome::fa("forward-step")`... first step  
@@ -245,10 +259,10 @@ A view in a few bullets:
 * Is laser centered (some beam driven activities at LOA with SLAC) 
 
 * Paris-Saclay centered : 
-  - .qblue[IJClab (CNRS/IN2P3)], LLR(CNRS/IN2P3) LOA (CNRS/INP), LPGP(CNRS/INP)
-  - .qblue[IRFU (CEA)],  Lidyl (CEA),
+  - .qblue[IJClab (CNRS/IN2P3)], LLR(CNRS/IN2P3), LOA (CNRS/INP), LPGP(CNRS/INP)
+  - .qblue[IRFU (CEA)], Lidyl (CEA)
   
-* About 20-25 FTE permanent research/engineer spread in 5 different labs and 4 laser facilities ! 
+* About 20-25 FTE permanent research/engineer spread in 6 different labs and 4 laser facilities ! 
 * Laser-Plasma Accelerator (LPA) R&D is mainly focused on compact electron sources for FEL, and secondary sources applications 
 
 * HEP concerned labs: [IJClab]()(PALLAS), LLR([SMILEI]()/Apollon) and [IRFU]() (Earli/[Awake]())
@@ -285,41 +299,13 @@ Radiography and irradiation applications
 
 ### HPC resources 
 
-* **VIRTUALAPLACE** gathering all CNRS and CEA labs involved in plasma acceleration in France for access to [GENCI]() HPC national resources ~ 10M h.cpu (A. Beck, LLR)
+* **VIRTUALAPLACE** gathering all CNRS and CEA labs involved in plasma acceleration in France for access to [GENCI](https://www.genci.fr/en) HPC national resources ~ 10M h.cpu (A. Beck, LLR)
 
-[National facility **APOLLON**]() : Multi-PW laser facility for exploratory experiments on laser-matter interaction in ultra-high intensity regime. Call based user access for 2 target area short /long focal length for LPA experiments. 
+[National facility **APOLLON**](): Multi-PW laser facility for exploratory experiments on laser-matter interaction in ultra-high intensity regime. Call based user access for 2 target area short /long focal length for LPA experiments. 
 
 .small[[1] Oubrerie, K. et al. Controlled acceleration of GeV electron beams in an all-optical plasma waveguide. Light Sci Appl 11, 180 (2022).
 ]
 
----
-
-# Start at the source  <img style="vertical-align:middle" src="img/AccRoadmapLDG.png" height="96px"/>  <img style="vertical-align:middle" src="img/logo-eupraxia.png" height="68px"/>
-
-
-
-.pull-left[
-
-**Significant step in technology development **
-* Addressing mid term challenge in high quality laser driven 
-e- beam source 
-* Synergy with compact light source development [EuPRAXIA]()
-
-**Feed integrated design studies**
-* refine performance limit in key-element towards collider requirement  (drivers / targetry etc ...) 
-* hands-on training of future generation of accelerator engineer/physicit
-
-]
-
-
-.pull-right[
-```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("img/accelerator_HGPLA_pillars.png")
-``` 
-]
-
-.small[[Mounet, N. European Strategy for Particle Physics Accelerator R&D Roadmap. 270 (2022).](http://arxiv.org/abs/2201.07895); [Assmann, R. W. et al. EuPRAXIA Conceptual Design Report. Eur. Phys. J. Spec. Top. 229, 3675–4284 (2020)](http://link.springer.com/10.1140/epjst/e2020-000127-8).
-]
 
 
 ---
@@ -388,7 +374,7 @@ Staged effort in .blue[**EuPRAXIA**] technical design study framework <sup>1</su
 
 
 Supported by : 
-- `r fontawesome::fa("microchip",fill = "orange")`  **high performances / high fidelity simulations** tools : huge parameter space for optimization / complex interplay nonlinear process
+- `r fontawesome::fa("microchip",fill = "orange")`  **high performances / high fidelity simulations** tools: huge parameter space for optimization / complex interplay nonlinear process
 - **Control-Command and acquisition** state of the art. 
 `r fontawesome::fa("bolt",fill = "orange")`  .qblue[enable advanced machine studies] 
 
@@ -423,15 +409,15 @@ knitr::include_graphics("img/lpi.png")
 ---
 name: pallas-1stbrick
 
-# In steps approach toward reliable HQ LPI
+# In steps approach toward reliable high-quality beam LPI
 
-Research and development lines :
+Research and development lines:
 1. advanced .red[**laser control**]
   - sub-percent level control ( $E^2_L, \tau_L,\phi(x,y)$ ...) 
   - spatio-temporal coupling / online monitoring 
   - multiple pulse / two colors
   
-2. development of .blue[**plasma targetry**] : longitudinal tailored plasma density profiles, beamline integration
+2. development of .blue[**plasma targetry**]: longitudinal tailored plasma density profiles, beamline integration
   - define technological configuration (standards?)
   - scalable to high repetition rate (kW operation)
   
@@ -464,16 +450,22 @@ knitr::include_graphics("img/wbs-pallas-2022.png")
 ```
 ]
 
-Funds : funded by IN2P3, CPER, ICJlab and PIA3-PACIFICS project  
-* Total estimated cost in equipment: >3.5 M€ - secured fund ~ 2.4 M€ 
-* No fund for post-doc estimated requirement : ~ 4 years 
+Specific strategical skill to be reinforced : machine learning,  plasma physic/ computing scientist  
+
+Non specific: magnet, cabling, control-command 
+
+Funds : funded by IN2P3, CPER, ICJlab and PIA3-PACIFICS project.  Total estimated cost in equipment: >3.5 M€ - secured fund ~ 2.4 M€. No fund for post-doc estimated requirement: ~ > 4 years 
 
 SWOT analysis see : [back slide](#swot)  
 
+---
+# Special focus on HR 
 
-
-
-
+.center[
+```{r echo=FALSE, out.width="70%"}
+knitr::include_graphics("img/walid_table.png")
+```
+]
 
 ---
 # PALLAS installation overview
@@ -482,20 +474,21 @@ SWOT analysis see : [back slide](#swot)
 knitr::include_graphics("img/PALLAS-LASERIX.png")
 ```
 ]
-.small[courtesy G. Iaquanello]
+.small[courtesy of G. Iaquaniello]
 ---
 # PALLAS beamline overview
 .center[
-```{r echo=FALSE, out.width="70%"}
+```{r echo=FALSE, out.width="62%"}
 knitr::include_graphics("img/PALLAS-BEAMLINE.png")
 ```
 ]
+.small[courtesy of G. Iaquaniello, A. Gonnin, Y. Peinaud, D. Douillet]
 ---
 # Present status of experimental hall 
 
 Dedicated to laser-plasma (.blue[**PALLAS**]) and THz acceleration (**TWAC-EIC**) R&D @ IJClab
 * radiation shielded 
-* cleanliness : ISO8
+* cleanliness: ISO8
 * temperature controlled : 21.5 $\pm$ 0.1 (RMS) °C
 * 2 $\times$ 10 Gb/s network
 
@@ -517,7 +510,7 @@ name: plasmatargetry1
 - Betatron wavelength  &emsp; &emsp; &emsp; $\,\,\,\,\rightarrow$ &emsp; $\lambda_\beta =\sqrt{2\gamma_e}\lambda_p \sim 250-800\,\mu m$ 
 
 **Tailoring gas species density profiles** 
-- **.qblue[to control injection]** : localized ionization injection <sup>1,2</sup> 
+- **.qblue[to control injection]**: localized ionization injection <sup>1,2</sup> 
 - **.blue[tune]** the injected **.qblue[charge / beam loading]** <sup>3</sup>
 
 **Tailoring plasma density profile**: 
@@ -579,7 +572,7 @@ $\Rightarrow$ $n_e(x)$  $\propto$ cell geometry + $Q_i$ gas flow
 
 <img style="vertical-align:middle" src="img/targetExp.svg" height="32px"/> prototype experimental characterization on dedicated testbench ...`r fontawesome::fa("rocket", fill = "#e5bf00")` validation on LD
 
-`r fontawesome::fa("triangle-exclamation", fill ="#00294B" )` Effort to be coordinated at European level between different target labs (DESY, LNF-INFN..)
+`r fontawesome::fa("triangle-exclamation", fill ="#00294B" )` Effort to be coordinated at European level between different target labs (DESY, LNF-INFN..) $\Rightarrow$ .qblue[**EuPRAXIA preparatory phase**] 
 
 .small[
 [1] figure 3 of  [M. C. Downer et al.  “Diagnostics for plasma-based electron accelerators,” Rev. Mod. Phys.,**90**,3, p. 035002,(2018)]() is a good start even if good points are now missing ...  `r fontawesome::fa("arrows-rotate", fill = "qblue")`
@@ -597,12 +590,12 @@ name: plasmacellstatus
 .pull-left.w30[
 
 - Fast-PIC simulations 
-- Building dataset
+- Building dataset 
 - Bayesian optimum search
 - Tolerance studies
 ]
 .pull-right.w70[
-.right[
+.center[
 ```{r echo=FALSE, out.width="90%"}
   knitr::include_graphics("img/rds23-projections.svg")
 ```
@@ -612,19 +605,20 @@ name: plasmacellstatus
 - Geometrical shaping for density outramp 
 ]
 .pull-right.w70[
-.right[
+.center[
 ```{r echo=FALSE, out.width="60%"}
   knitr::include_graphics("img/CFD_simulations.png")
 ```
 ]]
 .pull-left.w30[
-- Prototype developments 
+- Prototype developments
+- Beam production test planned for 05/2023
 
 <br>
 **Pierre Drobniak, PhD**
 ]
 .pull-right.w70[
-.right[
+.center[
 ```{r echo=FALSE, out.width="60%"}
   knitr::include_graphics("img/target_proto.png")
 ```
@@ -638,9 +632,9 @@ name: plasmacellstatus
 
 
 .pull-left.w80[
-Test bench for plasma target cell with a 2 TW laser beam
+Test bench for plasma target cell with a 2 TW laser beam *PlasmaCell* beamline LASERIX.
 
-- diags : time resolved high resolution **plasma density diagnostic** <sup>1</sup> and spectral imaging for **dopant distribution control** <sup>2</sup>
+- **Diags:** time resolved high resolution **plasma density diagnostic** <sup>1</sup> and spectral imaging for **dopant distribution control** <sup>2</sup>
 - **mass-flow controlled gas injection** system with continuous flow target operation with **two stages differential pumping**
 ]
 
@@ -682,20 +676,19 @@ knitr::include_graphics("img/pallas-ld-scheme.png")
 ```
 
 ---
-# High speed large aperture mirror final focus stabilization
-
+# Example: high speed large aperture mirror final focus stabilization
+- .qblue[Reach **< 0.3 urad**] (rms stability) on target. Currently 3-7 urad (rms)  
 - For large aperture mirror are required for 50 TW pulses min 90x130mm => **ultra lightweight mirror**
-- Combine SiC + boostec [1] : < 150 g with SFE< 80 nm 
-
-```{r echo=FALSE, out.width="95%"}
+- Combine SiC + boostec [1]: < 150 g with SFE< 80 nm 
+```{r echo=FALSE, out.width="90%"}
 knitr::include_graphics("img/HS-mirror-sic.png")
 ```
-
 - Test on piezo tip-tilt for optimal bandwidth [~400Hz] validated [1]
+- MHz witness beam under validation 
 - On going qualification test of femtosecond broadband coating on SiC: IBS stress compensation and LIDT under vacuum [2] $\Rightarrow$ challenge to combine high LIDT and control stress without back face compensation
 
 .small[
-[1]: MRC gmbh <br> [2]: MERSEN/OPTOMAN/LIDARIS  
+[1]: MRC gmbh, [2]: MERSEN/OPTOMAN/LIDARIS  
 ]
 
 ---
@@ -706,7 +699,7 @@ knitr::include_graphics("img/accelerator_roadmap-HH2022-kJacobs-p22.png")
 ``` 
 
 ---
-# Conclusions
+# Summary
 
 * **PALLAS** project is building  a **10Hz laser-plasma accelerator test facility** with an exciting program for the next 5 years on high quality e- injector recognized as one of the key milestones in the accelerator roadmap [1]. 
 
@@ -714,10 +707,10 @@ knitr::include_graphics("img/accelerator_roadmap-HH2022-kJacobs-p22.png")
 
 * **Push back the laser-plasma technology frontiers** to high reliability and control $\rightarrow$ will open new insight for beam shape and phase space control
 
-* Very active team on the project which is *a newcomer* in the field is building a machine in less than 4 years
+* Very active team on the project which is .orange[*a new comer*] in the field is building a machine in less than 4 years
   - First results are coming [2]
   - Team is growing collaborations in discussion: CEA-IRFU, LOA, LNF-INFN
-  - Reinforcing collaborations with industry is mandatory for laser driver: Amplitude laser, Image optics, local micro machinining ceramic company, ...
+  - Reinforcing collaborations with industry is mandatory for laser driver: Amplitude laser, Image optics, local micro machining ceramic company, ...
   - Still on road for being able to produce first electron by end of 2023...depending procurement delay hazard. 
 
 .small[
@@ -1090,3 +1083,17 @@ knitr::include_graphics("img/lascala-program.png")
 ```
 
 ]
+
+---
+class: center, middle
+
+# being updated 
+
+last version available [here](https://kevincassou.github.io/slides/CSS_IJClab_2022/slides/CSS_ICJlab_LPA2022.html#1)
+
+.footnote[
+Ce document est la propriété d’IJCLab et ne peut être ni reproduit ni diffusé sans autorisation du laboratoire.
+This document is written by the IJCLab. It is an IJCLab property and cannot be reproduced or communicated without this authorization.
+
+]
+
