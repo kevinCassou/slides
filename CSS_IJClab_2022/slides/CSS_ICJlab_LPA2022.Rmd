@@ -409,10 +409,10 @@ knitr::include_graphics("img/lpi.png")
 ---
 name: pallas-1stbrick
 
-# In steps approach toward reliable high-quality beam LPI
+# In steps approach toward reliable high-quality beam
 
 Research and development lines:
-1. advanced .red[**laser control**]
+1. advanced .red[**laser control**]: challenge with high intensity laser system (industrial collaboration required)
   - sub-percent level control ( $E^2_L, \tau_L,\phi(x,y)$ ...) 
   - spatio-temporal coupling / online monitoring 
   - multiple pulse / two colors
@@ -421,7 +421,7 @@ Research and development lines:
   - define technological configuration (standards?)
   - scalable to high repetition rate (kW operation)
   
-3. electron .orange[**beam control and transport**]
+3. electron .orange[**beam control and transport**]: start versatile beamline for characterization.
   - in/out coupling of electron beam / laser-driver 
   - 6D beam characterization and control: very challenging R&D on diagnostics (ultra short longitudinal phase space/ single shot) 
 
@@ -450,22 +450,15 @@ knitr::include_graphics("img/wbs-pallas-2022.png")
 ```
 ]
 
-Specific strategical skill to be reinforced : machine learning,  plasma physic/ computing scientist  
+Specific strategical skill to be reinforced: machine learning,  plasma physic/ computing scientist  
 
 Non specific: magnet, cabling, control-command 
 
-Funds : funded by IN2P3, CPER, ICJlab and PIA3-PACIFICS project.  Total estimated cost in equipment: >3.5 M€ - secured fund ~ 2.4 M€. No fund for post-doc estimated requirement: ~ > 4 years 
+Funds: funded by IN2P3, CPER, ICJlab and PIA3-PACIFICS project.  Total estimated cost in equipment: >3.5 M€ - secured fund ~ 2.4 M€. No fund for post-doc estimated requirement: ~ > 4 years 
 
 SWOT analysis see : [back slide](#swot)  
 
----
-# Special focus on HR 
-
-.center[
-```{r echo=FALSE, out.width="70%"}
-knitr::include_graphics("img/walid_table.png")
-```
-]
+**Special focus on HR vs skill**: [back slide](#specialfocushr)
 
 ---
 # PALLAS installation overview
@@ -1082,6 +1075,16 @@ with specific lectures and practicals on LPA and french laser installations, the
 knitr::include_graphics("img/lascala-program.png")
 ```
 
+]
+
+---
+name:specialfocushr
+# Special focus on HR vs skill 
+
+.center[
+```{r echo=FALSE, out.width="70%"}
+knitr::include_graphics("img/walid_table.png")
+```
 ]
 
 ---
